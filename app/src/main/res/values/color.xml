@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Pimary Colors  -->
+   <color name="vz_red_color">#CD040B</color>
+   <color name="vz_black_color">#000000</color>
+   <color name="vz_white_color">#FFFFFF</color>
+   <color name="vz_native_button_color">#31A6CA</color>
+   <color name="vz_toolbar_seperator">#D8DADA</color>
+
+
+   <!-- Background Grays  -->
+   <color name="vz_background_gray_1_color">#E4E5E3</color>
+   <color name="vz_background_gray_color">#F6F6F6</color>
+   <color name="vz_background_gray_2_color">#f5f5f6</color>   <!-- Background color provided by yujie  -->
+
+
+   <!--  Functional Greys  -->
+   <color name="vz_charcoal_color">#333333</color>
+   <color name="vz_gray_color">#4B4B4B</color>
+   <color name="vz_light_gray_color">#959595</color>
+   <color name="vz_lighter_gray_color">#CCCCCC</color>
+   <color name="vz_battleship_gray_color">#848482</color>
+
+   <!-- Pops of color  -->
+   <color name="vz_teal_color">#82CEAC</color>
+   <color name="vz_sky_color">#ABE0F9</color>
+   <color name="vz_gold_color">#FBD362</color>
+   <color name="vz_salmon_color">#F9B295</color>
+
+
+   <!-- MF UI CODE -->
+   <color name="colorPrimary">#3F51B5</color>
+   <color name="colorPrimaryDark">#303F9F</color>
+   <color name="colorAccent">#FF4081</color>
+
+   <!-- Pimary Colors  -->
+   <!-- <color name="ct_mf_red_color">#CD040B</color>
+   <color name="ct_mf_black_color">#000000</color>  -->
+   <color name="ct_mf_white_color">#FFFFFF</color>
+
+   <!-- Background Grays  -->
+   <!--<color name="ct_background_gray_1_color">#E4E5E3</color>
+   <color name="ct_background_gray_color">#F6F6F6</color>
+   <color name="ct_background_gray_2_color">#f5f5f6</color>-->   <!-- Background color provided by yujie  -->
+
+   <!-- Background Sky  -->
+   <!--<color name="ct_background_sky_1_color">#ABE0F9</color>
+   <color name="ct_background_pacific_color">#69B2D5</color>
+   <color name="ct_background_gold_color">#FBD362</color>
+   <color name="ct_background_teal_color">#82CEAC</color>-->
+
+   <!--  Functional Greys  -->
+   <!--<color name="ct_charcoal_color">#333333</color>
+   <color name="ct_gray_color">#4B4B4B</color>
+   <color name="ct_light_gray_color">#959595</color>
+   <color name="ct_lighter_gray_color">#CCCCCC</color>-->
+
+   <!-- Pops of color  -->
+   <!--<color name="ct_teal_color">#82CEAC</color>
+   <color name="ct_sky_color">#ABE0F9</color>
+   <color name="ct_gold_color">#FBD362</color>
+   <color name="ct_salmon_color">#F9B295</color>-->
+
+   <color name="hyper_link">#0066cc</color>
+
+   <!-- MF Colors  -->
+   <color name="ct_mf_pale_teal_color">#82CEAC</color>
+   <color name="ct_mf_robins_egg_blue_color">#ABE0F9</color>
+   <color name="ct_mf_light_gold_color">#FBD362</color>
+   <color name="ct_mf_salmon_color">#F9B295</color>
+   <color name="ct_mf_powder_pink_color">#FAAFE3</color>
+
+   <!-- App Header Text color  -->
+   <color name="ct_mf_scarlet_color">#CD040B</color>
+   <!-- App Text Header Color  -->
+   <color name="ct_mf_black_color">#000000</color>
+   <!-- App inline text color  -->
+   <color name="ct_mf_charcoal_color">#333333</color>
+   <!-- App inline text color  -->
+   <color name="ct_mf_charcoal2_color">#262626</color>
+
+   <!-- for Header background -->
+   <color name="ct_mf_pale_grey_color">#F5F5F6</color>
+   <!-- for Line divider color-->
+   <color name="ct_mf_light_grey_color">#E4E5E3</color>
+
+</resources>

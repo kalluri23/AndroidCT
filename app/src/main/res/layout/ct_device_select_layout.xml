@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_60dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		layout="@layout/ct_br_toolbar" />
+
+	<include
+		android:id="@+id/ct_options_combo_template"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ct_header_bar"
+		android:layout_marginBottom="@dimen/ct_sz_20dp"
+		layout="@layout/ct_combination_select_template_layout"/>
+
+</RelativeLayout>

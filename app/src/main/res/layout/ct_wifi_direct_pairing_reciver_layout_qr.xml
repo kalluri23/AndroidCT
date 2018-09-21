@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		layout="@layout/ct_br_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_60dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"/>
+
+	<RelativeLayout
+		android:id="@+id/ct_wifi_direct_receiver_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/ct_header_bar">
+
+		<com.verizon.contenttransfer.fonts.CTHeaderTextView
+			android:id="@+id/ct_disc_hotspot_heading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_30dp"
+			android:gravity="center_vertical|left"
+			android:text="@string/ct_qr_code_scan_page_header_receiver"
+			android:textColor="@color/ct_mf_black_color"
+			android:textStyle="bold"
+			android:textSize="@dimen/ct_txt_sz_25sp" />
+
+		<View
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_20dp"
+			android:layout_below="@+id/ct_disc_hotspot_heading"
+			android:background="@android:color/black"
+			android:layout_height="4dp"
+			android:id="@+id/view2" />
+
+		<RelativeLayout
+			android:id="@+id/ct_old_phone_chk_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/view2"
+			android:layout_marginLeft="@dimen/ct_sz_20dp"
+			android:layout_marginTop="@dimen/ct_sz_60dp"
+			android:visibility="gone"
+			android:gravity="center_vertical">
+
+			<ImageView
+				android:id="@+id/ct_w_pairing_device_iv"
+				android:layout_width="@dimen/ct_sz_36dp"
+				android:layout_height="@dimen/ct_sz_36dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="@dimen/ct_sz_18dp"
+				android:layout_marginRight="@dimen/ct_sz_24dp"
+				android:src="@mipmap/icon_ct_smartphone_white"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/ct_w_pairing_device_iv"
+				android:orientation="vertical">
+
+				<com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+					android:id="@+id/ct_w_pairing_phone_desc_tv"
+					style="@style/CTBlackTextHeading"
+					android:layout_marginBottom="@dimen/ct_sz_5dp"
+					android:gravity="left"
+					android:text="@string/ct_new_phone_name"/>
+
+				<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+					android:id="@+id/ct_old_phone_hd_desc"
+					style="@style/CTTextDescription"
+					android:gravity="left" />
+
+			</LinearLayout>
+
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/ct_wifi_direct_receiver_r2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/ct_old_phone_chk_view"
+			android:layout_marginTop="70dp">
+			<ImageView
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+				android:id="@+id/qrcodePreview_iv"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:visibility="gone"/>
+		</RelativeLayout>
+
+	</RelativeLayout>
+	<!--</ScrollView>-->
+
+
+	<LinearLayout
+		android:id="@+id/ct_device_select_next_buttons_ll"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_45dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="@dimen/ct_sz_32dp"
+		android:layout_marginRight="@dimen/ct_sz_32dp"
+		android:layout_marginBottom="@dimen/ct_sz_20dp"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<com.verizon.contenttransfer.fonts.CTButtonTextView
+			android:id="@+id/ct_manual_btn"
+			style="@style/CTMFButtonTypeLine"
+			android:layout_gravity="bottom"
+			android:textStyle="bold"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:gravity="center|center_horizontal"
+			android:layout_marginRight="@dimen/ct_sz_10dp"
+			android:text="@string/button_manual_text"/>
+
+		<com.verizon.contenttransfer.fonts.CTButtonTextView
+			android:id="@+id/ct_W_pairing_i_dont_see_it_txt"
+			style="@style/CTMFButtonTypeSolid"
+			android:layout_gravity="bottom"
+			android:layout_marginLeft="@dimen/ct_sz_10dp"
+			android:textStyle="bold"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:gravity="center|center_horizontal"
+			android:text="@string/button_try_another_way_text"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

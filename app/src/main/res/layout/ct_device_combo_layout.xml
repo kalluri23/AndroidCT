@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/ct_mf_white_color">
+
+<include
+	android:id="@+id/ct_header_bar"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/ct_sz_60dp"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentTop="true"
+	layout="@layout/ct_br_toolbar" />
+
+<include
+	android:id="@+id/ct_options_combo_template"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/ct_header_bar"
+	android:layout_marginBottom="@dimen/ct_sz_20dp"
+	layout="@layout/ct_combination_select_template_layout"/>
+
+<ImageView
+	android:id="@+id/ct_settings"
+	android:layout_width="@dimen/ct_sz_24dp"
+	android:layout_height="@dimen/ct_sz_24dp"
+	android:src="@mipmap/settings_icon"
+	android:tag="@string/unCheck"
+	android:layout_marginRight="21dp"
+	android:layout_marginEnd="21dp"
+	android:layout_marginTop="18dp"
+	android:layout_alignTop="@+id/ct_options_combo_template"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

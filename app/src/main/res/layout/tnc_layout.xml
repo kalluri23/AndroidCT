@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mvm_home_header"
+        layout="@layout/mvm_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/ct_mf_light_grey_color" />
+
+    <TextView
+        android:id="@+id/eulaHeaderTV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_30dp"
+        android:layout_marginBottom="@dimen/ct_sz_10dp"
+        android:layout_marginTop="@dimen/ct_sz_10dp"
+        android:gravity="center"
+        android:text="@string/eula_header"
+        android:textColor="@color/ct_mf_charcoal_color"
+        android:textSize="@dimen/ct_h1_display_font" />
+
+    <ScrollView
+        android:id="@+id/eulaScrollSV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_400dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.65">
+
+        <TextView
+            android:id="@+id/eulaTV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ct_sz_400dp"
+            android:layout_marginLeft="@dimen/ct_sz_16dp"
+            android:layout_marginRight="@dimen/ct_sz_16dp"
+            android:layout_weight="0.65"
+            android:gravity="left"
+            android:scrollbars="vertical"
+            android:text="@string/eula"
+            android:textColor="@color/ct_mf_charcoal_color"
+            android:textSize="@dimen/ct_desc_font" />
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ct_tnc_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/acceptTncTV"
+            style="@style/CTMFButtonTypeSolid"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal"
+            android:text="@string/dialog_ok" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

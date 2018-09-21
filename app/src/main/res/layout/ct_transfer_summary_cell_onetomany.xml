@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/ct_sz_3dp"
+    android:layout_marginRight="@dimen/ct_sz_3dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp">
+
+    <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+        android:id="@+id/ct_connected_device_name"
+        style="@style/CTTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:text="Device Name" />
+
+    <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+        android:id="@+id/recap_info"
+        style="@style/CTTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ct_connected_device_name"
+        android:gravity="left"
+        android:text="5 Files/ 56.5 MB"/>
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="@dimen/ct_sz_40dp"
+        android:layout_height="@dimen/ct_sz_40dp"
+        android:padding="@dimen/ct_sz_5dp"
+        android:src="@mipmap/icon_ct_black_tick_small"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+</LinearLayout>

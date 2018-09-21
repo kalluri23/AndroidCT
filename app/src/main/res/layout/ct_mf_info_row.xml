@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/ct_sz_48dp"
+				android:background="@color/ct_mf_white_color">
+
+
+	<ImageView
+		android:id="@+id/ct_device_select_iv"
+		android:layout_width="@dimen/ct_sz_48dp"
+		android:layout_height="@dimen/ct_sz_48dp"
+		android:layout_marginLeft="@dimen/ct_sz_18dp"
+		android:layout_marginRight="@dimen/ct_sz_24dp"
+		android:src="@mipmap/ic_ct_gray_circle"
+		android:tag="@string/unCheck"/>
+
+	<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+		android:id="@+id/ct_phone_combination_desc_tv"
+		style="@style/CTTextDescription"
+		android:gravity="left"
+		android:text="@string/ct_android_to_android"
+		android:layout_centerVertical="true"
+		android:layout_toEndOf="@+id/ct_device_select_iv"/>
+
+</RelativeLayout>

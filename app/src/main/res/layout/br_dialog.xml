@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ct_dialog_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ct_sz_5dp"
+        android:layout_marginTop="@dimen/ct_sz_5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/ct_sz_20dp"
+        android:layout_gravity="left">
+
+        <!-- This is for the info image -->
+      <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/ct_sz_30dp"
+            android:layout_height="@dimen/ct_sz_30dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/ct_sz_20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_infor"/>-->
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ct_sz_8dp"
+            android:text="Header Message"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textColor="@color/vz_charcoal_color"
+            android:textSize="@dimen/ct_txt_sz_18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <!-- Underline with red color -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:visibility="gone"
+        android:background="@color/ct_mf_black_color" />
+
+    <!-- The message -->
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:id="@+id/messageTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ct_sz_16dp"
+                android:gravity="left"
+                android:padding="@dimen/ct_sz_8dp"
+                android:layout_marginLeft="@dimen/ct_sz_20dp"
+                android:layout_marginRight="@dimen/ct_sz_20dp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/vz_charcoal_color"
+                android:textSize="@dimen/ct_txt_sz_16sp" />
+
+            <TextView
+
+                android:id="@+id/messageTextViewNotice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="left"
+                android:textColor="@color/vz_charcoal_color"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ct_sz_15dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ct_sz_0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/ct_sz_5dp"
+        android:layout_marginTop="@dimen/ct_sz_5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- No button -->
+        <TextView
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/ct_sz_80dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/ct_sz_10dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
+            android:gravity="center"
+            android:text="@string/btnNo"
+            android:background="@color/vz_white_color"
+            android:textColor="@color/vz_native_button_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <!-- Yes Button -->
+        <TextView
+            android:id="@+id/positiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/ct_sz_80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/btnYes"
+            android:textColor="@color/vz_native_button_color"
+            android:textSize="@dimen/ct_txt_sz_16sp"
+            android:background="@color/vz_white_color"
+            android:typeface="normal" />
+    </LinearLayout>
+
+</LinearLayout>

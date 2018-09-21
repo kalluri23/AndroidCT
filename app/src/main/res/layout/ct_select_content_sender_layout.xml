@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		layout="@layout/ct_br_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_60dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" />
+	<RelativeLayout
+		android:id="@+id/ct_select_cnt_transfer_footer_id"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/ct_sz_20dp"
+		android:layout_height="wrap_content">
+		<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/ct_cloud_contact_can_not_transfer_id"
+			style="@style/CTTextDescription"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_height="@dimen/ct_sz_35dp"
+			android:visibility="visible"
+			android:text="@string/ct_cloud_contact_can_not_transfer_tv" />
+
+		<LinearLayout
+			android:id="@+id/ct_select_cnt_transfer_btn_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_below="@id/ct_cloud_contact_can_not_transfer_id"
+			android:orientation="horizontal">
+
+			<com.verizon.contenttransfer.fonts.CTButtonTextView
+				android:id="@+id/ct_select_content_sender_cancel_btn"
+				style="@style/CTMFButtonTypeLine"
+				android:layout_gravity="bottom"
+				android:gravity="center|center_horizontal"
+				android:text="@string/cancel_button" />
+
+			<com.verizon.contenttransfer.fonts.CTButtonTextView
+				android:id="@+id/ct_select_content_sender_transfer_btn"
+				style="@style/CTMFButtonTypeSolidGrey"
+				android:layout_gravity="bottom"
+				android:layout_marginLeft="@dimen/ct_sz_10dp"
+				android:gravity="center|center_horizontal"
+				android:text="@string/ct_cnt_transfer_transfer_txt"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/ct_content_selection_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/ct_header_bar"
+		android:layout_above="@id/ct_select_cnt_transfer_footer_id"
+		android:visibility="visible">
+
+		<com.verizon.contenttransfer.fonts.CTHeaderTextView
+			android:id="@+id/ct_select_cnt_transfer_heading_tv"
+			style="@style/CTTextHeading"
+			android:layout_marginTop="@dimen/ct_sz_30dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@color/ct_mf_black_color"
+			android:textStyle="bold"
+			android:textSize="@dimen/ct_txt_sz_20sp"
+			android:text="@string/ct_select_cnt_transfer_heading_tv" />
+
+		<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/ct_select_cnt_transfer_desc_tv"
+			style="@style/CTTextDescription"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:layout_below="@+id/ct_select_cnt_transfer_heading_tv"
+			android:text="@string/ct_select_cnt_transfer_desc_tv" />
+
+		<View
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_below="@+id/ct_select_cnt_transfer_desc_tv"
+			android:layout_marginTop="@dimen/ct_sz_20dp"
+			android:background="@android:color/black"
+			android:layout_height="4dp"
+			android:id="@+id/view2" />
+
+		<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/ct_select_all"
+			style="@style/CTTextDescription"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="9dp"
+			android:tag="@string/select_all"
+			android:text="@string/select_all"
+			android:textColor="@color/ct_mf_black_color"
+			android:layout_below="@+id/view2"
+			android:layout_alignRight="@+id/ct_content_container"
+			android:layout_alignEnd="@+id/ct_content_container" />
+
+		<ListView
+			android:id="@+id/ct_content_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_below="@+id/ct_select_all"
+			android:layout_marginTop="@dimen/ct_sz_10dp"
+			android:layout_marginBottom="@dimen/ct_sz_10dp"
+			android:fadeScrollbars="true"
+			android:orientation="vertical" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

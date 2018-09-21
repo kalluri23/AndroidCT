@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ct_mf_white_color">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.verizon.contenttransfer.fonts.CTHeaderTextView
+        android:id="@+id/ct_header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your header text here."
+        android:textColor="@color/ct_mf_black_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/ct_sz_40dp"
+        android:layout_marginLeft="@dimen/ct_sz_32dp"
+        android:layout_marginTop="@dimen/ct_sz_28dp"
+        android:layout_marginBottom="@dimen/ct_sz_28dp"
+        android:layout_marginRight="@dimen/ct_sz_32dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+        android:id="@+id/message_below_header"
+        android:layout_below="@+id/ct_header_tv"
+        style="@style/CTTextDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/ct_sz_32dp"
+        android:layout_marginRight="@dimen/ct_sz_32dp"
+        android:layout_marginTop="@dimen/ct_sz_12dp"
+        android:layout_marginBottom="@dimen/ct_sz_12dp"
+        android:text="your description message"
+        android:textSize="@dimen/ct_txt_sz_13sp"/>
+
+     </RelativeLayout>
+</RelativeLayout>

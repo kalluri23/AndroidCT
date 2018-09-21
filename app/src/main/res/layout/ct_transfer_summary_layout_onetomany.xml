@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color"
+    android:gravity="center">
+
+    <include
+        android:id="@+id/ct_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/ct_br_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ct_transfer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_tr_summ_done_tv"
+            style="@style/CTMFButtonTypeSolid"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal"
+            android:text="@string/ct_tr_summ_done_txt"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ct_transfer_summary_inner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ct_transfer_btn"
+        android:layout_below="@+id/ct_header_bar"
+        android:orientation="vertical">
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_tr_summ_heading_id"
+            style="@style/CTTextHeading"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ct_tr_summ_heading"
+            android:layout_marginTop="@dimen/ct_sz_30dp" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_tr_summ_desc"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ct_sz_12dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ct_tr_summ_heading_id"
+            android:text="@string/total_transfer" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/summary"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ct_tr_summ_desc"
+            android:text="5 Files with size of 9.3 MB" />
+
+        <!--<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_tr_avg_speed"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:text="Speed"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ct_tr_summ_desc" />-->
+
+    <!--    <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_tr_tot_time"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:text="Total Time"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ct_tr_avg_speed" />-->
+
+        <ListView
+            android:id="@+id/ct_tr_summ_content_container_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:orientation="vertical"
+            android:listSelector="@android:color/transparent"
+            android:layout_below="@+id/summary"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:layout_marginStart="@dimen/ct_sz_20dp"
+            android:layout_marginEnd="@dimen/ct_sz_20dp"
+            android:layout_marginBottom="@dimen/ct_sz_10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

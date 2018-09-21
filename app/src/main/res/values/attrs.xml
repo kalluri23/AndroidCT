@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the standard attributes that make up a complete theme. -->
+    <declare-styleable name="Theme">
+        <!-- Default appearance of text: color, typeface, size, and style. -->
+        <attr name="textHeading" format="reference" />
+        <attr name="textDescription" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="dragView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordTranformation">
+        <attr name="passwordtrans" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

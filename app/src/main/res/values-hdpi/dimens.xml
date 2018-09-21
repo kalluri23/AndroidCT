@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--   R E A D      M E
+    Any Value you add to this LIST please multiply me by 0.75
+    -->
+
+    <!--
+    /**
+     * Scaling factor to convert a density in DPI units to the density scale.
+     * @hide
+     */
+    public static final float DENSITY_DEFAULT_SCALE = 1.0f / DENSITY_DEFAULT;
+
+    Where as DENSITY_DEFAULT is 160 - - > scaling factor = 1.0f / 160 = 0.00625.
+
+    sizeScale = DENSITY_DEFAULT_SCALE * DENSITY_DPI
+
+    From this:
+
+        ldpi = 0.00625 * 120 -> 0.75
+        mdpi = 0.00625 * 160 -> 1.0
+        hdpi = 0.00625 * 240 -> 1.5
+        xhdpi = 0.00625 * 320 -> 2.0
+        xxhdpi = 0.00625 * 480 -> 3.0
+        xxxhdpi = 0.00625 * 640 -> 4.0
+    -->
+    <!-- Default screen margins, per the Android Design guidelines.
+        Use 18 dp as Right and Left screen margins
+    -->
+
+    <dimen name="ct_slide_bar">64.5px</dimen>
+    <dimen name="ct_tablet_list_width">225dp</dimen>
+    <dimen name="ct_phone_list_height">375dp</dimen>
+
+    <!-- Verizon fonts -->
+    <dimen name="ct_h1_display_font">18sp</dimen>
+    <dimen name="ct_h2_display_font">15sp</dimen>
+    <dimen name="ct_sub_head_font">9sp</dimen>
+    <dimen name="ct_body_copy_font">9.75sp</dimen>
+    <dimen name="ct_legal_font">10.5sp</dimen>
+
+    <dimen name="ct_large_button_font">9sp</dimen>
+    <dimen name="ct_small_button_font">7.5sp</dimen>
+
+    <dimen name="ct_uri_link_font">9sp</dimen>
+    <dimen name="ct_privacy_font">9sp</dimen>
+    <dimen name="ct_desc_font">9.75sp</dimen>
+
+    <dimen name="ct_mf_red_header_font">18sp</dimen>
+    <dimen name="ct_mf_black_header_font">11.25sp</dimen>
+    <dimen name="ct_mf_black_inline_header_font">9.75sp</dimen>
+    <dimen name="ct_mf_gray_inline_text_font">9.75sp</dimen>
+    <dimen name="ct_mf_button_text_font">13sp</dimen>
+
+    <dimen name="ct_txt_sz_5sp">3.75sp</dimen>
+    <dimen name="ct_txt_sz_8sp">6sp</dimen>
+    <dimen name="ct_txt_sz_10sp">7.5sp</dimen>
+    <dimen name="ct_txt_sz_12sp">9sp</dimen>
+    <dimen name="ct_txt_sz_13sp">9.75sp</dimen>
+    <dimen name="ct_txt_sz_14sp">10.5sp</dimen>
+    <dimen name="ct_txt_sz_15sp">15sp</dimen>
+    <dimen name="ct_txt_sz_16sp">12sp</dimen>
+    <dimen name="ct_txt_sz_18sp">13.5sp</dimen>
+    <dimen name="ct_txt_sz_20sp">15sp</dimen>
+    <dimen name="ct_txt_sz_22sp">16.6sp</dimen>
+    <dimen name="ct_txt_sz_24sp">18sp</dimen>
+    <dimen name="ct_txt_sz_25sp">18.75sp</dimen>
+    <dimen name="ct_txt_sz_28sp">21sp</dimen>
+
+    <dimen name="ct_sz_0dp">0dp</dimen>
+    <dimen name="ct_sz_0_5dp">0.5dp</dimen>
+    <dimen name="ct_sz_1dp">0.75dp</dimen>
+    <dimen name="ct_sz_2dp">1.5dp</dimen>
+    <dimen name="ct_sz_3dp">2.25dp</dimen>
+    <dimen name="ct_sz_4dp">3dp</dimen>
+    <dimen name="ct_sz_5dp">3.75dp</dimen>
+    <dimen name="ct_sz_7dp">5.25dp</dimen>
+    <dimen name="ct_sz_8dp">6dp</dimen>
+    <dimen name="ct_sz_10dp">7.5dp</dimen>
+    <dimen name="ct_sz_12dp">9dp</dimen>
+    <dimen name="ct_sz_13dp">9.75dp</dimen>
+    <dimen name="ct_sz_14dp">10.5dp</dimen>
+    <dimen name="ct_sz_15dp">11.25dp</dimen>
+    <dimen name="ct_sz_16dp">12dp</dimen>
+    <dimen name="ct_sz_17dp">12.75dp</dimen>
+    <dimen name="ct_sz_18dp">13.5dp</dimen>
+    <dimen name="ct_sz_20dp">15dp</dimen>
+    <dimen name="ct_sz_24dp">18dp</dimen>
+    <dimen name="ct_sz_25dp">18.75dp</dimen>
+    <dimen name="ct_sz_28dp">21dp</dimen>
+    <dimen name="ct_sz_30dp">22.5dp</dimen>
+    <dimen name="ct_sz_32dp">24dp</dimen>
+    <dimen name="ct_sz_33dp">24.75dp</dimen>
+    <dimen name="ct_sz_35dp">26.25dp</dimen>
+    <dimen name="ct_sz_36dp">27dp</dimen>
+    <dimen name="ct_sz_38dp">28.5dp</dimen>
+    <dimen name="ct_sz_40dp">30dp</dimen>
+    <dimen name="ct_sz_42dp">31.5dp</dimen>
+    <dimen name="ct_sz_45dp">33.75dp</dimen>
+    <dimen name="ct_sz_48dp">36dp</dimen>
+    <dimen name="ct_sz_50dp">37.5dp</dimen>
+    <dimen name="ct_sz_55dp">41.25dp</dimen>
+    <dimen name="ct_sz_56dp">42dp</dimen>
+    <dimen name="ct_sz_60dp">45dp</dimen>
+    <dimen name="ct_sz_65dp">48.75dp</dimen>
+    <dimen name="ct_sz_70dp">52.5dp</dimen>
+    <dimen name="ct_sz_75dp">56.25dp</dimen>
+    <dimen name="ct_sz_80dp">60dp</dimen>
+    <dimen name="ct_sz_90dp">67.5dp</dimen>
+    <dimen name="ct_sz_100dp">75dp</dimen>
+    <dimen name="ct_sz_110dp">82.5dp</dimen>
+    <dimen name="ct_sz_120dp">90dp</dimen>
+    <dimen name="ct_sz_130dp">97.5dp</dimen>
+    <dimen name="ct_sz_135dp">101.25dp</dimen>
+    <dimen name="ct_sz_140dp">105dp</dimen>
+    <dimen name="ct_sz_150dp">112.5dp</dimen>
+    <dimen name="ct_sz_160dp">120dp</dimen>
+    <dimen name="ct_sz_170dp">127.5dp</dimen>
+    <dimen name="ct_sz_180dp">135dp</dimen>
+    <dimen name="ct_sz_190dp">142.5dp</dimen>
+    <dimen name="ct_sz_200dp">150dp</dimen>
+    <dimen name="ct_sz_235dp">176.25dp</dimen>
+    <dimen name="ct_sz_250dp">187.5dp</dimen>
+    <dimen name="ct_sz_260dp">195dp</dimen>
+    <dimen name="ct_sz_275dp">206.25dp</dimen>
+    <dimen name="ct_sz_300dp">225dp</dimen>
+    <dimen name="ct_sz_350dp">262.5dp</dimen>
+    <dimen name="ct_sz_375dp">281.25dp</dimen>
+    <dimen name="ct_sz_400dp">300dp</dimen>
+
+
+</resources>

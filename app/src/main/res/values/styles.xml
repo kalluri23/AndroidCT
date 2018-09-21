@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CTProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/vz_horizontal_progress_bar</item>
+    </style>
+
+    <style name="CTTextHeading" parent="android:TextAppearance" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_marginRight">@dimen/ct_sz_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_30dp</item>-->
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/ct_mf_black_color</item>
+        <item name="android:padding">@dimen/ct_sz_2dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_mf_red_header_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--     -->
+    <style name="CTBlackTextHeading" parent="android:TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ct_mf_black_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- <item name="android:padding">@dimen/ct_sz_2dp</item>  -->
+
+    <style name="CTTextDescription" parent="android:TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ct_mf_charcoal_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:layout_marginRight">@dimen/ct_sz_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_30dp</item>-->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+    <style name="CTRedTextDescription" parent="android:TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vz_red_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:layout_marginRight">@dimen/ct_sz_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_30dp</item>-->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+    <!-- <item name="android:padding">@dimen/ct_sz_2dp</item> -->
+
+    <style name="CTBlackText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ct_mf_black_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_30dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+
+    <style name="CTNumberText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ct_mf_black_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_24sp</item>
+    </style>
+
+    <style name="CTSMallTextDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ct_mf_light_grey_color</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+
+    <style name="CTRedBackgroundButton">
+        <item name="android:layout_width">102dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/vz_red_solid_round_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="CTRedBackgroundButtonText">
+        <item name="android:layout_width">@dimen/ct_sz_120dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_42dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/ct_mf_white_color</item>
+        <item name="android:textSize">@dimen/ct_mf_button_text_font</item>
+    </style>
+
+    <style name="CTWhiteBackgroundButton">
+        <item name="android:layout_width">@dimen/ct_sz_120dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_42dp</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/vz_red_stroke_round_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="CTWhiteBackgroundButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/ct_mf_scarlet_color</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+
+    <style name="CTGrayBackgroundButton">
+        <item name="android:layout_width">102dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/vz_gray_solid_round_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="CTGrayBackgroundButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/ct_mf_light_grey_color</item>
+        <item name="android:textSize">@dimen/ct_txt_sz_13sp</item>
+    </style>
+
+    <style name="CTSkyCircle">
+        <item name="android:layout_width">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_40dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_40dp</item>
+        <item name="android:background">@drawable/vzcircle_background_sky</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTPacificCircle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_40dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_40dp</item>
+        <item name="android:background">@drawable/vzcircle_background_pacific</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTTealCircle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_40dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_40dp</item>
+        <item name="android:background">@drawable/vzcircle_background_teal</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTGoldCircle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_40dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_40dp</item>
+        <item name="android:background">@drawable/vzcircle_background_gold</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTTwoBtnViewGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/ct_sz_25dp</item>
+        <item name="android:layout_marginTop">@dimen/ct_sz_10dp</item>
+    </style>
+
+    <style name="CTImageViewIconErrorInfo">
+        <item name="android:layout_width">@dimen/ct_sz_60dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_60dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="SplashScreen">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="NotificationText" parent="android:TextAppearance.StatusBar.EventContent" />
+
+  	<style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+	<style name="MyTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="hidetitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="Theme.VZTransfer" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:actionBarSize">0dip</item> 
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <!--  @dimen/abc_text_size_large_material  -->
+    <style name="CTButtonTypeLine" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/ct_large_button_font</item>
+        <item name="android:textColor">@color/vz_red_color</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_width">@dimen/ct_sz_130dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_35dp</item>
+        <item name="android:background">@drawable/vz_red_stroke_rect_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_margin">@dimen/ct_sz_5dp</item>
+    </style>
+
+    <style name="CTButtonTypeSolid" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/ct_sub_head_font</item>
+        <item name="android:textColor">@color/vz_white_color</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_width">@dimen/ct_sz_130dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_35dp</item>
+        <item name="android:background">@drawable/vz_red_solid_rect_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <!--<item name="android:layout_margin">@dimen/sz_5dp</item>-->
+    </style>
+
+    <style name="CTButtonTypeSolidDisable" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/ct_sub_head_font</item>
+        <item name="android:textColor">@color/vz_white_color</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_width">@dimen/ct_sz_130dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_35dp</item>
+        <item name="android:background">@drawable/vz_disable_gray_solid_rect_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_margin">@dimen/ct_sz_5dp</item>
+    </style>
+
+    <style name="CTButtonTypeSolidGray" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/ct_h2_display_font</item>
+        <item name="android:textColor">@color/vz_white_color</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_width">@dimen/ct_sz_130dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_35dp</item>
+        <item name="android:background">@drawable/vz_disable_gray_solid_rect_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_margin">@dimen/ct_sz_5dp</item>
+    </style>
+
+    <style name="CTHeading" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vz_charcoal_color</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CTQuestion" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vz_gray_color</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CTMessage" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/vz_charcoal_color</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="LineDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="circleimage">
+        <item name="android:layout_width">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_38dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_38dp</item>
+        <item name="android:layout_marginTop">@dimen/ct_sz_25dp</item>
+        <item name="android:layout_marginBottom">@dimen/ct_sz_25dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+
+    <style name="surveyImage">
+        <item name="android:layout_width">@dimen/ct_sz_135dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_135dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/ct_sz_20dp</item>
+        <item name="android:layout_marginRight">@dimen/ct_sz_20dp</item>
+        <item name="android:layout_marginTop">@dimen/ct_sz_25dp</item>
+        <item name="android:layout_marginBottom">@dimen/ct_sz_25dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- MF chnages  -->
+
+    <style name="CTMFScreenHeader">
+        <item name="android:textSize">@dimen/ct_mf_red_header_font</item>
+        <item name="android:textColor">@color/ct_mf_scarlet_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">@dimen/ct_sz_300dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_60dp</item>
+        <item name="android:padding">@dimen/ct_sz_2dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/ct_sz_30dp</item>
+    </style>
+
+    <style name="CTMFPrimaryCenterImage">
+        <item name="android:layout_width">@dimen/ct_sz_275dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_275dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/ct_sz_45dp</item>
+    </style>
+
+    <style name="CTMFButtonTypeLine">
+        <item name="android:textSize">@dimen/ct_mf_button_text_font</item>
+        <item name="android:textColor">@color/ct_mf_black_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">@dimen/ct_sz_135dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_42dp</item>
+        <item name="android:background">@drawable/ct_button_line_black_bg</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTMFButtonTypeSolid">
+        <item name="android:textSize">@dimen/ct_mf_button_text_font</item>
+        <item name="android:textColor">@color/ct_mf_white_color</item>
+        <item name="android:layout_width">@dimen/ct_sz_135dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_42dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/ct_button_solid_black_bg</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CTMFButtonTypeSolidGrey">
+        <item name="android:textSize">@dimen/ct_mf_button_text_font</item>
+        <item name="android:textColor">@color/ct_mf_light_grey_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">@dimen/ct_sz_135dp</item>
+        <item name="android:layout_height">@dimen/ct_sz_42dp</item>
+        <item name="android:background">@mipmap/ic_ct_grey_solid_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="CustomBox">
+        <item name="android:maxLength">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@drawable/custom_box</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/ct_mf_black_color</item>
+        <item name="android:textColorPrimary">@color/vz_white_color</item>
+        <item name="android:background">@color/ct_mf_white_color</item>
+    </style>
+
+</resources>

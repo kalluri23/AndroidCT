@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color">
+
+    <include
+        android:id="@+id/ct_header_bar"
+        layout="@layout/ct_br_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ct_layout_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_btn_done"
+            style="@style/CTMFButtonTypeLine"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal"
+            android:text="@string/button_done_text" />
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/install_all"
+            style="@style/CTMFButtonTypeSolidGrey"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/ct_sz_10dp"
+            android:textColor="@color/ct_mf_white_color"
+            android:gravity="center|center_horizontal"
+            android:text="@string/install_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ct_app_install_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ct_layout_done"
+        android:layout_below="@+id/ct_header_bar"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.verizon.contenttransfer.fonts.CTHeaderTextView
+                android:id="@+id/ct_app_install_header"
+                style="@style/CTTextHeading"
+                android:text="@string/applications_install_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_32dp"
+                android:layout_marginTop="@dimen/ct_sz_30dp"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/ct_mf_black_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/ct_txt_sz_22sp"/>
+
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_app_install_desc"
+                android:layout_below="@+id/ct_app_install_header"
+                android:text="@string/app_install_info"
+                style="@style/CTTextDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_32dp"
+                android:layout_marginTop="@dimen/ct_sz_10dp"
+                android:textSize="@dimen/ct_txt_sz_13sp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_32dp"
+                android:layout_below="@+id/ct_disc_hotspot_info"
+                android:layout_marginTop="@dimen/ct_sz_20dp"
+                android:background="@android:color/black"
+                android:layout_height="4dp"
+                android:id="@+id/view2" />
+
+        </LinearLayout>
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_select_all_apps"
+            style="@style/CTTextDescription"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:tag="@string/select_all"
+            android:text="@string/select_all"
+            android:textColor="@color/ct_mf_black_color"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ct_sz_20dp"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/ct_app_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_app_install_desc"
+            android:layout_marginBottom="@dimen/ct_sz_10dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:fadeScrollbars="false"
+            android:listSelector="@android:color/transparent"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</RelativeLayout>

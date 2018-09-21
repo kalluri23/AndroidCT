@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color"
+    android:id="@+id/t">
+
+    <include
+        android:id="@+id/ct_header_bar"
+        layout="@layout/ct_br_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ct_wifi_pairing_sender_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_wifi_direct_pairing_sender_search_again_btn"
+            style="@style/CTMFButtonTypeLine"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal"
+            android:text="@string/ct_search_again_txt" />
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_wifi_direct_pairing_sender_next_wifi_direct_btn"
+            style="@style/CTMFButtonTypeSolidGrey"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/ct_sz_10dp"
+            android:gravity="center|center_horizontal"
+            android:text="@string/ct_next_txt"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/ct_invitation_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ct_header_bar"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@id/image_header_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+             <!--   <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_ct_mobile_text" />-->
+
+                <com.verizon.contenttransfer.fonts.CTHeaderTextView
+                    android:id="@+id/ct_header_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/heading_ctinvitation_to_connect"
+                    android:textColor="@color/ct_mf_black_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ct_sz_40dp"
+                    android:layout_marginLeft="@dimen/ct_sz_30dp"
+                    android:layout_marginTop="@dimen/ct_sz_28dp"
+                    android:layout_marginRight="@dimen/ct_sz_30dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ct_invitation_connect_textTV"
+                style="@style/CTTextDescription"
+                android:textSize="@dimen/ct_txt_sz_13sp"
+                android:text="@string/text_ctinvitation_to_connect"
+                android:layout_marginTop="@dimen/ct_sz_28dp"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="left"
+                android:layout_below="@id/image_header_layout"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ct_w_direct_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/ct_sz_18dp"
+        android:layout_marginEnd="@dimen/ct_sz_18dp"
+        android:layout_below="@+id/ct_header_bar"
+        android:layout_above="@id/ct_wifi_pairing_sender_btn_group"
+        android:visibility="gone">
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_w_direct_hd_tv"
+            android:text="@string/ct_w_direct_hd_tv"
+            style="@style/CTTextHeading"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:gravity="left"
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_w_direct_desc_tv"
+            android:layout_below="@+id/ct_w_direct_hd_tv"
+            android:text="@string/ct_w_direct_desc_tv"
+            style="@style/CTTextDescription"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/ct_txt_sz_13sp"/>
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_w_direct_desc_tv"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginBottom="@dimen/ct_sz_10dp"
+            android:fadeScrollbars="false"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ct_w_direct_layout_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ct_header_bar"
+        android:layout_above="@id/ct_wifi_pairing_sender_btn_group"
+        android:visibility="visible">
+
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_w_direct_hd_tv_qr"
+            style="@style/CTTextHeading"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp"
+            android:text="@string/ct_w_direct_hd_tv_discovering_qr" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_w_direct_desc_tv_qr"
+            android:layout_below="@+id/ct_w_direct_hd_tv_qr"
+            android:text="@string/ct_w_direct_desc_tv_pls_wait_to_discover_qr"
+            style="@style/CTTextDescription"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:textSize="@dimen/ct_txt_sz_13sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_below="@+id/ct_w_direct_desc_tv_qr"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ct_old_phone_chk_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vz_border_bottom"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ct_tr_summ_cell_content_chk"
+            android:layout_width="@dimen/ct_sz_30dp"
+            android:layout_height="@dimen/ct_sz_30dp"
+            android:src="@mipmap/icon_ct_black_tick_small"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:tag="@string/unCheck" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/ct_tr_summ_cell_content_chk"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ct_tr_summ_cell_content_tv"
+                style="@style/CTTextDescription"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:text="@string/ct_tr_summ_cell_content_tv"
+                android:layout_marginRight="0dp"
+                android:paddingLeft="@dimen/ct_sz_10dp" />
+
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_tr_summ_cell_total_count_tv"
+                style="@style/CTTextDescription"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/ct_sz_10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/right_caret"
+                android:drawablePadding="5dp"
+                android:text="@string/ct_tr_summ_cell_total_count_tv" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

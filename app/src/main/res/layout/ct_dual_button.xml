@@ -1,0 +1,32 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/vz_white_color"
+	android:layout_alignParentBottom="true"
+	android:layout_marginBottom="@dimen/ct_sz_20dp"
+	android:orientation="horizontal"
+	android:gravity="center_horizontal">
+
+	<TextView
+		android:id="@+id/cancelbtn"
+		android:layout_width="@dimen/ct_sz_120dp"
+		android:layout_height="@dimen/ct_sz_42dp"
+		style="@style/CTMFButtonTypeLine"
+		android:text="@string/left_button"
+		android:layout_gravity="bottom"
+		android:gravity="center|center_horizontal"
+		android:layout_marginRight="@dimen/ct_sz_20dp"/>
+
+	<TextView
+		android:id="@+id/transferbtn"
+		android:layout_width="@dimen/ct_sz_120dp"
+		android:layout_height="@dimen/ct_sz_42dp"
+		style="@style/CTMFButtonTypeSolid"
+		android:text="@string/right_button"
+		android:layout_gravity="bottom"
+		android:gravity="center|center_horizontal"
+		android:layout_marginLeft="@dimen/ct_sz_20dp"/>
+
+</LinearLayout>

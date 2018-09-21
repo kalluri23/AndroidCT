@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/ct_sz_10dp"
+    android:paddingBottom="@dimen/ct_sz_10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="@dimen/ct_sz_35dp"
+            android:layout_height="@dimen/ct_sz_35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/content_transfer_icon" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="@dimen/ct_sz_200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Content Transfer"
+            android:textColor="@color/vz_black_color"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/ct_sz_10dp"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="@dimen/ct_sz_18dp"
+        android:layout_height="@dimen/ct_sz_18dp"
+        android:src="@mipmap/ct_unchecked"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/ct_sz_10dp"
+        android:tag="@string/unCheck" />
+
+    <TextView
+        android:id="@+id/installed_with_a_right_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#87CEFA"
+        android:textSize="14dp"
+        android:text="Installed"
+        android:textAllCaps="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/ct_sz_10dp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

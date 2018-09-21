@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   Fonts    -->
+    <string name="font_verizon_apex_medium_otf">VerizonApex-Medium.otf</string>
+    <string name="font_VeraMono_ttf">VeraMono.ttf</string>
+    <!---  Headers  -->
+    <!--<string name="transfermethod">Which transfer method?</string>-->
+    <string name="phonetype">Which phone is this?</string>
+    <string name="receive">Receiving&#8230;</string>
+    <!--<string name="finish">Finished</string>-->
+    <string name="sending">Sending&#8230;</string>
+    <!--<string name="paring_device">Pairing&#8230;</string>-->
+    <string name="transfer_interrupted">Transfer Interrupted</string>
+    <string name="new_phone_name">New phone name</string>
+    <string name="total_connected_devices">Total Connected:&#160;</string>
+    <!--<string name="network_connection">Network connection</string>-->
+    
+    <string name="enter_pin">Enter pairing pin</string>
+    <!-- Replaced ellipse with &&;#8230; -->
+    <!--<string name="enter_phone_pin">Enter phone pin</string>-->
+
+    <!--  Messages  -->
+    <string name="content_transfer">Content Transfer</string>
+
+    <string name="discovering">Discovering&#8230;</string>
+    <string name="or">OR</string>
+    <string name="choose">Choose From Phone List</string>
+    <string name="securitytxt_pre">Security Key </string>
+    <string name="securitytxt_post"> is sent to Receiver</string>
+    <string name="securitykey">12345</string>
+    <string name="msg_p2p_no_wifi_connection">Wi-Fi connection not found. Please connect to a Wi-Fi connection.</string>
+    <string name="msg_connection_other_device">Connecting, please wait.</string>
+    <string name="msg_connection_other_device_please_wait">Connecting to the other device. Please wait.</string>
+    <string name="connecting_hostspot_please_wait">Connecting to hotspot. Please wait.</string>
+    <string name="connecting_wifi_please_wait">Connecting to Wi-Fi. Please wait.</string>
+    <string name="getting_ready_please_wait">Getting ready, please wait.</string>
+    <string name="conntectionfailed">Please check the pin, verify both phones are still connected to same network and retry.</string>
+
+    <string name="refresh_discovery">Refresh</string>
+    <string name="ortext">OR</string>
+    <string name="data_transfer_cancelled">Data transfer was cancelled, please try again.</string>
+    <string name="phone_name">Phone name</string>
+    <string name="wifi_setup">Wi-Fi Setup</string>
+    <string name="same_wifi">Connect both phones to same Wi-Fi</string>
+    <string name="wifi_not_connected">Not connected</string>
+    <string name="calc_message">Please wait, collecting data</string>
+    <string name="selectoneormore">Please select at least one item to Transfer.</string>
+    <string name="file_with_zero_count_msg">Data with zero count cannot be transferred. Please deselect it.</string>
+    <string name="personal_hotspot_on_msg">Mobile hotspot is on.\nPlease turn it off to continue.</string>
+    <string name="supporting_video_file_formats">Transfer of *.mov file format(s) is not supported.</string>
+    <string name="zero_lenth_files">**Media files with Zero content will not be transferred.</string>
+    <string name="invalid_device_combo_selection">Device combination selection is not in sync. Please start over on both devices and verify the combinations.</string>
+    <string name="msg_ok">OK</string>
+    <string name="TOTAL_TIME">Total time :&#160; </string>
+    <string name="AVERAGE_SPEED">Average speed :&#160; </string>
+    <string name="PROCESSING_PHOTO">Collecting Photos &#160; </string>
+    <string name="PROCESSING_MUSIC">Collecting Music &#160; </string>
+    <string name="PROCESSING_VIDEO">Collecting Videos &#160; </string>
+    <string name="PROCESSING_CONTACTS">Collecting Contacts &#160; </string>
+    <string name="PROCESSING_CALLLOG">Collecting Call logs &#160; </string>
+    <string name="PROCESSING_APPS">Collecting Apps &#160; </string>
+    <!--<string name="PROCESSING_SMS">Collecting SMS &#160; </string>-->
+    <string name="PROCESSING_SMS_MMS">Collecting Messages &#160; </string>
+    <string name="PROCESSING_CALENDAR">Collecting Calendars &#160; </string>
+    <string name="PROCESSING_DOCUMENT">Collecting Documents &#160; </string>
+    <string name="PROCESSING_PASSWORD">Collecting Password &#160; </string>
+    <string name="PLEASE_WAIT">Please wait...</string>
+    <string name="wifi_pair_message">Connect to network shown on other device</string>
+    <string name="wifi_connected_to">Wi-Fi Connected to: &#160; </string>
+    <string name="wifi_warning">It appears you have connected to the Verizon Guest Wi-Fi Network. For optimum performance, please select the MCT-Fast (preferred) or MCT Network.\n\n Password: vztransfer</string>
+    <string name="not_same_wifi_network_warning">Please connect this device to network: &#160;</string>
+    <string name="email_id">1234567890</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="copyright">&#9400;</string>
+    <string name="copyright2">&#169;</string>
+    <string name="eula_header">Terms and Conditions.</string>
+    <string name="terms_message">By clicking \"Start transfer\" you are accepting the Terms and Conditions.</string>
+    <string name="terms_conditions_str">Terms and Conditions.</string>
+    <string name="transfer_summary_header">Transfer Summary</string>
+	<string name="ct_crash_dialog_text">Sorry for inconvenience, we are working to make this app better.</string>
+    <string name="ct_title_activity_error_report_dialog">ErrorReportDialog</string>
+    <string name="password_paste_msg">Paste it into the Wi-Fi password field.</string>
+    <string name="ct_no_internet_alert_msg">Your device requires your permission to stay connected to networks with no internet access.</string>
+    <string name="ct_no_internet_alert_msg_show_notification">Click here to open the notification tray to look for the \"no internet\" message and select \"Yes\" on the prompt.</string>
+    <string name="ct_click_here_spannable">Click here to open your&#160;</string>
+    <string name="here_text">here</string>
+
+
+    <!-- Button Names   -->
+    
+    <!--1st screen  -->
+    <string name="oldButtonName">Old</string>
+    <string name="newButtonName">New</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="back">Back</string>
+
+    <string name="eula">
+        <![CDATA[
+        EULA Text
+        ]]>
+    </string>
+    <string name="about">About</string>
+    <string name="build_version">Build Version:&#160;</string>
+    <string name="build_date">Date:&#160;</string>
+    <string name="enabling_wifi_please_wait">Enabling Wi-Fi, Please wait...</string>
+    <string name="android">Android</string>
+    <string name="iPhone">iPhone</string>
+    <string name="btnContinue">Continue</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="btnTransfer">Transfer</string>
+    <string name="contacts_str">Contacts</string>
+    <string name="photos_str">Photos</string>
+    <string name="videos_str">Videos</string>
+    <string name="musics_str">Audio</string>
+    <string name="callLogs_str">Call logs</string>
+    <string name="messages_str">Messages</string>
+    <string name="calendars_str">Calendars</string>
+    <string name="documents_str">Documents</string>
+    <string name="apps_str">Apps</string>
+    <string name="passwords_str">Passwords</string>
+    <string name="finish_summary_TotalTime">Total Time:&#160;</string>
+    <string name="finish_summary_TotalTransferred">Total Transferred:&#160;</string>
+    <string name="finish_summary_MB">&#160;MB</string>
+    <string name="btnNo">No</string>
+    <string name="btnYes">Yes</string>
+    <string name="DataSent">Data Sent</string>
+    <string name="DataReceived">Data Received</string>
+
+    <string name="action_settings">action_settings</string>
+    <!--<string name="app_name">Content Transfer</string>-->
+
+    <!-- MF UI STRING -->
+    <string name="title_activity_ctstartup">CTStartupActivity</string>
+    <string name="toolbar_heading_ctlanding">Phone-to-Phone Transfer</string>
+    <string name="heading_ctlanding">Transfer what you need to your new phone.</string>
+    <string name="text_ctlanding">Open My Verizon and make sure both phones are on this screen. Follow the instructions in sync, so each device is on the same step.</string>
+    <string name="text_ctlanding_standalone">Open Content Transfer and make sure both phones are on this screen. Follow the instructions in sync, so each device is on the same step.</string>
+
+    <!--Common toolbar heading strings-->
+    <string name="toolbar_heading_error">Error</string>
+    <string name="toolbar_heading_transfer_summary_detail">Transfer Summary Details</string>
+    <string name="toolbar_heading_transfer_summary">Transfer Summary</string>
+    <string name="toolbar_heading_setup">Setup</string>
+    <string name="toolbar_heading_pairing">Pairing</string>
+    <string name="toolbar_heading_discovering">Discovering</string>
+    <string name="toolbar_heading_transfer">Transfer</string>
+    <string name="toolbar_saving_background_media">Saving</string>
+    <string name="toolbar_heading_verizon_cloud">Verizon Cloud</string>
+    <string name="toolbar_heading_transfer_complete">Transfer Complete</string>
+    <string name="toolbar_heading_install">Install Apps</string>
+    <!--Common button name strings-->
+    <string name="button_got_it_text">Got it</string>
+    <string name="button_done_text">Done</string>
+    <string name="button_try_again_text">Try Again</string>
+    <string name="button_recap_text">Recap</string>
+    <string name="button_next_text">Next</string>
+    <string name="button_try_another_way_text">Try Another Way</string>
+    <string name="button_wifi_settings_text">Wi-Fi settings</string>
+    <string name="button_re_scan_text">Rescan</string>
+
+    <!--Common Strings for hotspot-->
+    <string name="verizon_content_transfer_text">Verizon content transfer</string>
+
+    <string name="title_activity_ctinvitation_to_connect">CTInvitationToConnectActivity</string>
+    <string name="heading_ctinvitation_to_connect">Be on the lookout for an invite to start the transfer.</string>
+    <string name="text_ctinvitation_to_connect">Check your new phone and connect.</string>
+
+    <string name="title_activity_ctselect_content">CTSelectContentActivity</string>
+    <string name="heading_ct_select_content">Getting ready to transfer.</string>
+    <string name="text_ct_select_content">Keep the app open for a smooth transfer.</string>
+
+    <string name="title_activity_ctcomplete">CTCompleteActivity</string>
+    <string name="heading_ct_complete">Congrats. You\'re Done.</string>
+    <string name="text_ct_complete">Your transfer is complete. Check your new phone to see how it went.</string>
+
+    <string name="title_activity_ctcomplete_notification">CTCompleteNotificationActivity</string>
+
+    <string name="title_activity_ctshow_pin">CTShowPINActivity</string>
+    <string name="heading_ctshow_pin">Your code is ready.</string>
+
+    <string name="title_activity_ctenter_pin">CTEnterPINActivity</string>
+    <string name="heading_ctenter_pin">Enter your code.</string>
+    <string name="text_ctenter_pin">Check your other phone and enter the code below.</string>
+    <string name="text_code_ctenter_pin">Code</string>
+
+    <string name="title_activity_ctlow_battery">CTLowBatteryActivity</string>
+    <string name="title_activity_ctdevice_select">CTDeviceSelectActivity</string>
+    <string name="unCheck">unCheck</string>
+    <string name="check">check</string>
+
+    <string name="title_activity_ctdevice_combo">CTDeviceComboActivity</string>
+    <string name="iphone_to_android_text">iPhone to Android</string>
+
+    <string name="title_activity_ctwifi_pairing_sender">CTWifiPairingSenderActivity</string>
+
+    <string name="title_activity_ctwifi_direct_pairing_reciver">CTWifiDirectPairingReciverActivity</string>
+
+
+    <string name="title_activity_cttransfer_summary">CTTransferSummaryActivity</string>
+
+    <string name="title_activity_ctvzcloud_detail">CTVZCloudDetailActivity</string>
+    <string name="title_activity_ctprogreess_receiver">CTProgreessReceiverActivity</string>
+    <string name="title_activity_ctprogress_sender">CTProgressSenderActivity</string>
+
+    <string name="title_activity_cthotspot_find">CTHotspotFindActivity</string>
+    <string name="title_activity_cthotspot_discovered">CTHotspotDiscoveredActivity</string>
+
+    <string name="title_activity_ctgoogle_drive_detail">CTGoogleDriveDetailActivity</string>
+
+    <string name="title_activity_ctnot_enough_storage">CTNotEnoughStorageActivity</string>
+    <string name="heading_ctnot_enough_storage">Your new phone is crowded.</string>
+    <!--<string name="text_ctnot_enough_storage">We can\'t fit 20GB of things on your new 16GB phone. Select less files and try again.</string>-->
+
+    <string name="text_ctnot_enough_storage_part_1">We can\'t fit&#160;</string>
+    <string name="text_ctnot_enough_storage_part_2">&#160;MB of things on your new&#160;</string>
+    <string name="text_ctnot_enough_storage_part_3">&#160;MB phone.Select less files and try again.</string>
+    <string name="title_activity_cttransfer_interrupt">CTTransferInterruptActivity</string>
+    <string name="heading_cttransfer_interrupt">Oops. Looks like your transfer was interrupted.</string>
+    <string name="text_cttransfer_interrupt">Your transfer didn\'t finish. Review the transfer recap or try again.</string>
+
+    <string name="title_activity_ctphoto_warning">CTPhotoWarningActivity</string>
+    <string name="ct_dialog_exit_title">Are you sure you want to leave now?</string>
+    <string name="ct_dialog_exit_msg">If you stop the transfer, you\'ll have to start over again.</string>
+    <string name="ct_w_direct_hd_tv">Do you see the name of your new phone?</string>
+    <string name="ct_w_direct_hd_tv_discovering_qr">Discovering supported devices</string>
+    <string name="ct_w_direct_desc_tv">Select the name of your new phone when it appears below. If you don\'t see it, search again.</string>
+    <string name="ct_w_direct_desc_tv_pls_wait_to_discover_qr">Please wait, discovery in progress.</string>
+    <string name="ct_w_phn_name_tv">Samsung Galaxy S7 Edge</string>
+    <string name="ct_dont_see_desc_tv">I don\'t see my phone</string>
+    <string name="ct_search_again_txt">Search again</string>
+    <string name="ct_w_pairing_desc_tv">Select your new phone\'s name when it appears on the other screen or let us know if you don\'t see it.</string>
+    <string name="ct_w_pairing_phone_desc_tv">Samsung Galaxy S7 Edge</string>
+    <string name="ct_W_pairing_i_dont_see_it_txt">I don\'t see it</string>
+    <string name="button_pairing_manual_setup_txt">Manual setup</string>
+    <string name="no_device_connected">No device connected to transfer. Please scan the code with your other device.</string>
+
+    <string name="ct_error_imv">Let\'s try another way.</string>
+    <string name="ct_error_desc1">Select \"I don\'t see my phone\" on both screens to transfer your things in a different way.</string>
+    <string name="ct_qr_error_desc1">Please make sure you have scanned the correct code or choose Manual setup on both devices.</string>
+    <string name="ct_qr_error_title">Error reading the code</string>
+    <string name="ct_qr_error_desc2">Please press \"Try another way\" on the other device and scan again, or choose Manual setup on both devices.</string>
+    <string name="ct_tr_summ_done_txt">Done</string>
+    <string name="ct_tr_summ_heading">Here\'s your transfer recap.</string>
+    <string name="ct_tr_summ_cell_content_tv">Contacts</string>
+    <string name="ct_tr_summ_cell_total_count_tv">251 of 251</string>
+    <string name="ct_dialog_exit_confirm">Confirm</string>
+    <string name="ct_toolbar_app_headerTV">Content Transfer</string>
+    <string name="ct_select_cnt_transfer_heading_tv">What are you transferring?</string>
+    <string name="ct_select_cnt_transfer_desc_tv">Choose all the things you want on your new phone.</string>
+    <string name="ct_cloud_contact_can_not_transfer_tv">* Sign in to your Cloud account on the new device to access Cloud content.</string>
+    <string name="ct_cnt_transfer_transfer_txt">Transfer</string>
+    <string name="ct_content_tv">Collecting...</string>
+    <string name="ct_total_gb_tv">1.1 GB</string>
+
+    <string name="title_activity_ctpartial_content_transfer_warning">CTPartialContentTransferWarningActivity</string>
+    <string name="heading_ctpartial_content_transfer_warning">Some of your things didn\'t transfer all the way.</string>
+    <string name="user_denied_permission">User Denied Permission</string>
+    <string name="user_denied_permission_for">User Denied Permission for&#160;</string>
+    <string name="text_ctpartial_content_transfer_warning">You can manually back up your things to a computer to keep them safe.</string>
+
+    <string name="title_activity_cttransfer_complete">CTTransferCompleteActivity</string>
+    <string name="heading_cttransfer_complete">All set. Your things transferred smoothly.</string>
+
+    <string name="title_activity_cthotspot_found">CTHotspotFoundActivity</string>
+
+    <string name="title_activity_ctno_same_network">CTNoSameNetworkActivity</string>
+
+    <string name="title_activity_ctno_same_wi_fi">CTNoSameWiFiActivity</string>
+    <string name="title_activity_ctselect_method">CTSelectMethodActivity</string>
+    <string name="title_activity_ctsame_wifi_network">CTSameWifiNetworkActivity</string>
+    <string name="heading_ctsame_wifi_network">Now, connect both phones to the same network.</string>
+    <string name="text_ctsame_wifi_network">Find a secure network and connect both phones.</string>
+    <string name="heading_network_name_ctsame_wifi_network">Network name</string>
+    <string name="qr_network_name_connected">Wi-Fi connected to :</string>
+    <string name="text_network_name_ctsame_wifi_network">MyFi 1234</string>
+    <string name="ct_device_combo_hd">Select your combination.</string>
+    <string name="ct_new_phone_hd_desc">Android to iPhone</string>
+    <string name="ct_device_select_hd">So, which phone is this?</string>
+    <string name="ct_old_phone_hd_desc">I\'ll be transferring things from this phone</string>
+    <string name="ct_i_will_desc">I\'ll be transferring things to this phone</string>
+    <string name="ct_next_txt">Next</string>
+    <string name="this_is_your_hotspot_tv">This is your hotspot.</string>
+    <string name="connect_this_phn_tv">Connect this phone to the network shown on the other device.</string>
+    <string name="connect_your_other_phn_tv">Connect your other phone to this network.</string>
+    <string name="ct_hotspot_disc_name_tv">Hotspot Name</string>
+    <string name="ct_hotspot_disc_conn_status">Verizon content transfer</string>
+    <string name="ct_hotspot_tv_pwd_txt">Hotspot password</string>
+    <string name="ct_qr_hotspot_tv_pwd_txt">Password</string>
+    <string name="ct_hotspot_tv_pwd_tv">Transfer123456</string>
+    <string name="ct_hotspot_find_tv_name">Hotspot Name</string>
+    <string name="ct_hotspot_find_conn_status">Wi-Fi is not connected</string>
+    <string name="ct_error_heading">Plug in and charge up.</string>
+    <string name="ct_cloud_contact_text">&#160;in Cloud *</string>
+    <string name="ct_password_manager_not_found_msg">CTPasswordManager not found</string>
+    <string name="ct_password_not_found_msg">Password not found</string>
+    <string name="ct_password_manager_found_msg">&#160;from CTPasswordManager</string>
+    <string name="ct_media_count_zero_text">Some of the items selected for transfer have no content on your device.\n\nPlease verify your selections once more, then click on \"Transfer\"</string>
+    <string name="ct_error_desc">Don\'t run out of battery in the middle of your transfer. Plug in your phone to ensure we have enough power to complete your transfer.</string>
+    <string name="ct_mdn_capture_msg">To help us improve your Content Transfer experience, please provide the phone number of this device (optional).</string>
+    <!-- MF Strings   -->
+    <!-- Button Names  -->
+    <string name="left_button">Left button</string>
+    <string name="right_button">Right button</string>
+    <string name="center_button">Center button</string>
+    <string name="start_transfer">Start transfer</string>
+    <string name="next_button">Next</string>
+    <string name="cancel_button">Cancel</string>
+    <!--  Page Headers  -->
+    <string name="ct_qr_code_scan_page_header_sender">Scan the code shown on your other device.</string>
+    <string name="ct_qr_code_scan_page_header_receiver">Scan the code with your other device.</string>
+    <string name="ct_one_to_many_max_device_connection">Scan this code on up to %d devices.</string>
+    <string name="ct_one_to_many_max_device_connection_use_pin">Use this code on up to %d devices.</string>
+    <string name="ct_landing_page_header">Get both phones ready to transfer.</string>
+    <string name="ct_select_phone_combination_header">Select your combination.</string>
+    <string name="ct_android_to_android">Android to Android</string>
+    <string name="ct_android_to_iphone">Android to iPhone</string>
+    <string name="ct_iphone_to_android">iPhone to Android</string>
+    <string name="ct_which_phone_header">So, which phone is this?</string>
+    <string name="ct_my_old_phone">This is my old phone</string>
+    <string name="ct_my_old_phone_desc">I\'ll be transferring things from this phone.</string>
+    <string name="ct_my_new_phone">This is my new phone</string>
+    <string name="ct_my_new_phone_desc">I\'ll be transferring things to this phone.</string>
+    <string name="ct_show_pin_header">Your code is ready.</string>
+    <string name="ct_show_pin_message">Use this code to connect your phones.</string>
+    <string name="ct_enter_pin_header">Enter your code.</string>
+    <string name="ct_enter_pin_message">Check your other phone and enter the code below.</string>
+    <string name="ct_pairing_code_edit_text">1234</string>
+    <string name="ct_pairing_code_message">Code</string>
+    <string name="clipboard_message">copy password</string>
+    <string name="no_media_transferred_msg">No media was transferred.</string>
+    <string name="ct_new_phone_name">New phone\'s name</string>
+    <string name="ct_survey_url">https://www.surveymonkey.com/r/66W8HF7</string>
+    <string name="ct_your_transfer_in_progress">Your transfer is in progress.</string>
+    <string name="ct_open_for_smooth_transfer">Keep the app open for a smooth transfer.</string>
+    <string name="dialog_title">Content Transfer</string>
+    <string name="App_title">Content Transfer</string>
+    <string name="dialog_ok">OK</string>
+    <string name="default_sms_setup_message">Content Transfer must be set as the default Messaging app in order to transfer messages. Tap Yes on the next screen to set it as the default app for the Transfer process.\n\nThis is only required during the Transfer process and can be switched back after completion.</string>
+    <string name="default_sms_setup_message_reset">Your preferred Messaging app may not be the current default app for text messages.\nPlease open your preferred Messaging app to reset it as the default.</string>
+    <string name="try_another_way_on_cross_old_router_transfer">Please select \"Try Another Way\" on both devices to continue.</string>
+    <string name="qr_code_verify_message">Verifying device info, Please wait...\n </string>
+    <string name="version_update_message1">The Content Transfer app on the other device seems to be out of date. Please update the app on that device to v:</string>
+    <string name="version_update_message2">"The Content Transfer app on this device seems to be out of date. Please update the app to v:"</string>
+    <string name="review_dialog_title">Rate Content Transfer</string>
+    <string name="review_dialog_message">If you enjoy using Content Transfer app, would you like to take a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="wifi_disconnected_alert">Your Wi-Fi may disconnect while pairing your phones. Don\'t worry, this is expected.\n\nYour settings will be restored when transfer completes. </string>
+    <string name="wifi_not_connected_alert">You may not be connected to internet</string>
+    <string name="button_manual_text">Manual setup</string>
+    <string name="manual_setup_dialog_text">Do you want to connect your devices manually?\n\nClicking Ok will restart the app. Please choose Manual setup on the other device also.</string>
+    <string name="wifi_setup_instruct">You will be taken to Wi-Fi Settings. Please select a Network to connect to.</string>
+    <string name="one_to_many_max_conn_count_msg">Maximum devices connected. Please click \"Ok\" to continue.</string>
+    <string name="applications_install_header">Choose which Apps to install</string>
+    <string name="app_install_info">Tap on install to start installing the app.</string>
+    <string name="ct_multiphone_transfer">Multiple Phone Transfer</string>
+    <string name="android_devices_only">Android devices only</string>
+    <string name="combination">Combination</string>
+    <string name="ct_advanced_options">Advanced Options.</string>
+    <string name="ct_external_permissions_text">Access to photos, media, and files on your device is required.</string>
+    <string name="music_player_not_found">No music apps found. Please open your music player to view the transferred music.</string>
+    <string name="first_page_move_dialog">Are you sure you want to quit? Data will not be saved.</string>
+    <string name="preparing_apps_wait">Preparing Apps.Please wait...</string>
+    <string name="configuring_device">Configuring device, Please wait...</string>
+    <string name="settingup_wifi_hotspot">Setting up Wi-Fi Hotspot. Please wait.</string>
+    <string name="doesnt_support_widi">This device doesn\'t support Wi-Fi Direct</string>
+    <string name="ct_saving_in_progress">Saving in progress.</string>
+    <string name="ct_open_for_saving">Keep the app open while we finish saving your content.</string>
+    <string name="saving_media_done">Saving Done. Click "OK" to continue new transfer.</string>
+    <string name="please_wait">Please wait</string>
+    <string name="connecting">Connecting</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="exit">Exit</string>
+    <string name="of">of</string>
+    <string name="see_how">see how&#160;</string>
+    <string name="of_your">of your&#160;</string>
+    <string name="complete">complete</string>
+    <string name="files">&#160;Files</string>
+    <string name="MB">&#160;MB</string>
+    <string name="app_install_header">App Install</string>
+    <string name="app_insatll_dialog_message">Do you want to install the remaining apps from your last transfer? These apps will be removed if you select No.</string>
+    <string name="save_media_header">Save Media</string>
+    <string name="save_media_dialog_message">Do you want to save the remaining content from your last transfer? These content will be removed if you select No.</string>
+    <string name="version_mismatch_string">Version Mismatch</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="higher">&#160;or higher.</string>
+    <string name="app_install_incomplete">App Install Incomplete</string>
+    <string name="app_install_incomplete_message">There are still some apps which you have not installed. Do you want to keep this list for next time? </string>
+    <string name="start_over">Start Over</string>
+    <string name="rate_app">Rate App</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="remind_later">Not now</string>
+    <string name="password_copied">The password has been copied to your clipboard.</string>
+    <string name="receiving">Receiving&#160;</string>
+    <string name="sending_to">Sending&#160;</string>
+    <string name="files_with_size">&#160;Files with size of&#160;</string>
+    <string name="transferred">transferred</string>
+    <string name="aborting_connection">Aborting connection</string>
+    <string name="connect_failed_retry">Connect failed. Retry.</string>
+    <string name="left_link">Left Link</string>
+    <string name="restart">Restart</string>
+    <string name="time_left">Time Left</string>
+    <string name="received">Received</string>
+    <string name="speed">Speed</string>
+    <string name="total_transfer">Total transfer</string>
+    <string name="peek_other_screen">Peek at your other screen.</string>
+    <string name="i_understand">I understand</string>
+    <string name="apps_list">Apps List</string>
+    <string name="warning_txt">Warning</string>
+    <string name="progress_start_text">0 Files / 0 MB</string>
+    <string name="enter_valid_pin">Please enter a valid code.</string>
+    <string name="invalid_pin">Invalid code. Please try again.</string>
+    <string name="less_than_1">Less than 1</string>
+    <string name="install_text">Install</string>
+    <string name="sent">Sent</string>
+    <string name="learn_more">Learn More</string>
+    <string name="vz_cloud_banner_text">Your memories are always safe with Verizon Cloud. Keep your photos, videos, contacts and more protected from devices loss or damage when you back up to Cloud. Now get 500GB for only $5/month.</string>
+    <string name="vz_cloud_protects">Verizon Cloud Protects</string>
+
+</resources>

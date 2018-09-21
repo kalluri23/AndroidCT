@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--   R E A D      M E
+    Any Value you add to this LIST please multiply me by 1
+    and add corresponsding values to to other dimens file
+    for other resolutions
+    -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="ct_slide_bar">86px</dimen>
+    <dimen name="ct_tablet_list_width">300dp</dimen>
+    <dimen name="ct_phone_list_height">500dp</dimen>
+
+    <!-- Verizon fonts -->
+    <dimen name="ct_h1_display_font">24sp</dimen>
+    <dimen name="ct_h2_display_font">20sp</dimen>
+    <dimen name="ct_sub_head_font">16sp</dimen>
+    <dimen name="ct_body_copy_font">13sp</dimen>
+    <dimen name="ct_legal_font">14sp</dimen>
+
+    <dimen name="ct_large_button_font">12sp</dimen>
+    <dimen name="ct_small_button_font">10sp</dimen>
+
+    <dimen name="ct_uri_link_font">12sp</dimen>
+    <dimen name="ct_privacy_font">12sp</dimen>
+    <dimen name="ct_desc_font">13sp</dimen>
+
+    <dimen name="ct_txt_sz_5sp">5sp</dimen>
+    <dimen name="ct_txt_sz_8sp">8sp</dimen>
+    <dimen name="ct_txt_sz_10sp">10sp</dimen>
+    <dimen name="ct_txt_sz_12sp">12sp</dimen>
+    <dimen name="ct_txt_sz_14sp">14sp</dimen>
+    <dimen name="ct_txt_sz_15sp">15sp</dimen>
+    <dimen name="ct_txt_sz_16sp">16sp</dimen>
+    <dimen name="ct_txt_sz_18sp">18sp</dimen>
+    <dimen name="ct_txt_sz_20sp">20sp</dimen>
+    <dimen name="ct_txt_sz_22sp">22sp</dimen>
+    <dimen name="ct_txt_sz_25sp">25sp</dimen>
+    <dimen name="ct_txt_sz_28sp">28sp</dimen>
+
+    <!-- new dim part sang started mar2016 -->
+    <dimen name="ct_sz_0dp">0dp</dimen>
+    <dimen name="ct_sz_0_5dp">0.5dp</dimen>
+    <dimen name="ct_sz_1dp">1dp</dimen>
+    <dimen name="ct_sz_2dp">2dp</dimen>
+    <dimen name="ct_sz_3dp">3dp</dimen>
+    <dimen name="ct_sz_4dp">4dp</dimen>
+    <dimen name="ct_sz_5dp">5dp</dimen>
+    <dimen name="ct_sz_8dp">8dp</dimen>
+    <dimen name="ct_sz_10dp">10dp</dimen>
+    <dimen name="ct_sz_15dp">15dp</dimen>
+    <dimen name="ct_sz_16dp">16dp</dimen>
+    <dimen name="ct_sz_17dp">17dp</dimen>
+    <dimen name="ct_sz_18dp">18dp</dimen>
+    <dimen name="ct_sz_20dp">20dp</dimen>
+    <dimen name="ct_sz_25dp">25dp</dimen>
+    <dimen name="ct_sz_28dp">28dp</dimen>
+    <dimen name="ct_sz_30dp">30dp</dimen>
+    <dimen name="ct_sz_35dp">35dp</dimen>
+    <dimen name="ct_sz_38dp">38dp</dimen>
+    <dimen name="ct_sz_40dp">40dp</dimen>
+    <dimen name="ct_sz_45dp">45dp</dimen>
+    <dimen name="ct_sz_50dp">50dp</dimen>
+    <dimen name="ct_sz_60dp">60dp</dimen>
+    <dimen name="ct_sz_65dp">65dp</dimen>
+    <dimen name="ct_sz_70dp">70dp</dimen>
+    <dimen name="ct_sz_75dp">75dp</dimen>
+    <dimen name="ct_sz_80dp">80dp</dimen>
+    <dimen name="ct_sz_90dp">90dp</dimen>
+    <dimen name="ct_sz_100dp">100dp</dimen>
+    <dimen name="ct_sz_110dp">110dp</dimen>
+    <dimen name="ct_sz_120dp">120dp</dimen>
+    <dimen name="ct_sz_130dp">130dp</dimen>
+    <dimen name="ct_sz_140dp">140dp</dimen>
+    <dimen name="ct_sz_150dp">150dp</dimen>
+    <dimen name="ct_sz_160dp">160dp</dimen>
+    <dimen name="ct_sz_170dp">170dp</dimen>
+    <dimen name="ct_sz_180dp">180dp</dimen>
+    <dimen name="ct_sz_190dp">190dp</dimen>
+    <dimen name="ct_sz_200dp">200dp</dimen>
+    <dimen name="ct_sz_250dp">250dp</dimen>
+    <dimen name="ct_sz_300dp">300dp</dimen>
+    <dimen name="ct_sz_375dp">375dp</dimen>
+    <dimen name="ct_sz_400dp">400dp</dimen>
+    <dimen name="ct_sz_275dp">275dp</dimen>
+    <!--  end sang part mar2016-->
+
+</resources>

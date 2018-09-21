@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		layout="@layout/ct_br_toolbar"/>
+
+
+		<TextView
+			android:id="@+id/ct_error_heading_tv"
+			style="@style/CTTextHeading"
+			android:layout_below="@+id/ct_header_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/ct_mf_black_color"
+			android:textStyle="bold"
+			android:gravity="left"
+			android:textSize="@dimen/ct_sz_40dp"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_28dp"
+			android:layout_marginBottom="@dimen/ct_sz_28dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_centerHorizontal="true"
+			android:text="@string/heading_cttransfer_interrupt"/>
+
+		<TextView
+			android:id="@+id/ct_error_desc_tv"
+			style="@style/CTTextDescription"
+			android:layout_below="@+id/ct_error_heading_tv"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:gravity="left"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_12dp"
+			android:layout_marginBottom="@dimen/ct_sz_12dp"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:text="@string/text_cttransfer_interrupt"/>
+
+		<!--	<LinearLayout
+				android:id="@+id/ct_interrupt_error_btn_grp"
+				style="@style/CTTwoBtnViewGroup"
+				android:layout_gravity="center"
+				android:layout_marginBottom="0dp">
+
+				<LinearLayout
+					android:id="@+id/ct_transfer_interrupt_recap_button"
+					style="@style/CTWhiteBackgroundButton"
+					android:layout_marginRight="@dimen/ct_sz_10dp">
+
+					<TextView
+						android:id="@+id/ct_recap"
+						style="@style/CTWhiteBackgroundButtonText"
+						android:text="@string/button_recap_text"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/ct_transfer_interrupt_try_again_button"
+					style="@style/CTRedBackgroundButton">
+
+					<TextView
+						android:id="@+id/ct_try_again"
+						style="@style/CTRedBackgroundButtonText"
+						android:text="@string/button_try_again_text"/>
+				</LinearLayout>
+
+			</LinearLayout>-->
+
+		<!--<include
+			android:id="@+id/ct_error_buttons"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/ct_sz_46dp"
+			android:layout="@layout/ct_dual_button"
+			android:layout_below="@+id/ct_error_desc_tv" />-->
+	<LinearLayout android:id="@+id/ct_error_buttons_ll"
+				  android:layout_width="match_parent"
+				  android:layout_height="@dimen/ct_sz_45dp"
+				  android:layout_alignParentBottom="true"
+				  android:layout_marginBottom="@dimen/ct_sz_20dp"
+				  android:orientation="horizontal"
+				  android:gravity="center_horizontal"
+				  android:layout_below="@+id/ct_error_desc_tv" >
+
+		<TextView
+			android:id="@+id/left_button_tv"
+			style="@style/CTMFButtonTypeLine"
+			android:text="@string/left_button"
+			android:layout_gravity="bottom"
+			android:gravity="center|center_horizontal"/>
+
+		<TextView
+			android:id="@+id/right_button_tv"
+			style="@style/CTMFButtonTypeSolid"
+			android:text="@string/right_button"
+			android:layout_gravity="bottom"
+			android:gravity="center|center_horizontal"
+			android:layout_marginLeft="@dimen/ct_sz_10dp"/>
+
+	</LinearLayout>
+
+	<!--</RelativeLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mvm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ct_dialog_bg" >
+
+    <!--  mvm:typefaceName="@string/font_verizon_apex_medium_otf"  -->
+    <TextView
+
+        android:id="@+id/titletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/ct_sz_12dp"
+        android:layout_marginTop="@dimen/ct_sz_10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:typeface="normal"
+        android:text="@string/toolbar_heading_discovering"
+        android:textSize="@dimen/ct_txt_sz_18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_below="@+id/titletext"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="2dip"
+        android:background="@color/ct_mf_black_color" />
+
+    <ProgressBar
+        android:id="@+id/customDialog_round_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@anim/progressbaranim"
+        android:progressDrawable="@anim/progressbaranim" />
+
+    <TextView
+
+        android:id="@+id/messagetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customDialog_round_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="message"
+        android:textColor="@android:color/black"
+        android:textStyle="normal" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_40dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/messagetext" >
+
+        <TextView
+            android:id="@+id/negBtn"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/ct_sz_100dp"
+            android:layout_gravity="center"
+            android:background="@color/vz_white_color"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_16sp"
+            android:gravity="center"
+            android:text="@string/btnNo"
+            android:textColor="@color/vz_native_button_color"
+            android:visibility="visible"
+            android:typeface="normal"/>
+
+        <TextView
+            android:id="@+id/posBtn"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/ct_sz_100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ct_sz_10dp"
+            android:background="@color/vz_white_color"
+            android:paddingTop="6dp"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="@string/btnYes"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_16sp"
+            android:textColor="@color/vz_native_button_color"
+            android:visibility="visible"
+            android:typeface="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

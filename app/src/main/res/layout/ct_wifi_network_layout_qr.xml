@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color">
+
+    <include
+        android:id="@+id/ct_header_bar"
+        layout="@layout/ct_br_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ct_header_bar">
+
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_disc_hotspot_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/ct_qr_code_scan_page_header_receiver"
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp" />
+
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_one_to_many_max_device_connection"
+            android:layout_width="@dimen/ct_sz_375dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ct_one_to_many_max_device_connection"
+            android:layout_below="@+id/ct_disc_hotspot_heading"
+            android:visibility="gone"
+            style="@style/CTTextDescription"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:textSize="@dimen/ct_txt_sz_13sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_30dp"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:layout_below="@+id/ct_one_to_many_max_device_connection"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+        <RelativeLayout
+            android:id="@+id/ct_hotspot_disc_pwd_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ct_sz_40dp"
+            android:layout_above="@+id/buttons_container"
+            android:layout_marginBottom="@dimen/ct_sz_10dp"
+            android:background="@color/ct_mf_white_color"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/ct_hotspot_password_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+                    android:id="@+id/ct_hotspot_tv_pwd_txt"
+                    style="@style/CTBlackTextHeading"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ct_qr_hotspot_tv_pwd_txt" />
+
+                <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                    android:id="@+id/ct_hotspot_tv_pwd"
+                    style="@style/CTBlackTextHeading"
+                    android:gravity="center_horizontal"
+                    android:text="123456" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ct_wifi_direct_qrcode_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_disc_hotspot_heading"
+            android:layout_marginTop="@dimen/ct_sz_60dp">
+
+            <ImageView
+                android:id="@+id/qrcodePreview_iv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_above="@+id/ct_hotspot_no_internet_alert_msg_tv"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/ct_hotspot_no_internet_alert_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/ct_sz_60dp">
+
+                <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                    android:id="@+id/ct_hotspot_no_internet_alert_msg"
+                    style="@style/CTTextDescription"
+                    android:text="@string/ct_no_internet_alert_msg" />
+
+                <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+                    android:id="@+id/ct_hotspot_no_internet_alert_msg_link"
+                    style="@style/CTTextDescription"
+                    android:layout_marginTop="@dimen/ct_sz_20dp"
+                    android:layout_below="@+id/ct_hotspot_no_internet_alert_msg"
+                    android:text="@string/ct_no_internet_alert_msg_show_notification" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ct_hotspot_disc_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ct_sz_40dp"
+            android:layout_above="@+id/ct_hotspot_disc_pwd_container"
+            android:layout_marginTop="@dimen/ct_sz_40dp"
+            android:background="@color/ct_mf_white_color"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/ct_network_name_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+                    android:id="@+id/ct_hotspot_disc_name_tv"
+                    style="@style/CTBlackTextHeading"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/ct_hotspot_disc_name_tv" />
+
+                <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                    android:id="@+id/ct_hotspot_disc_conn_status"
+                    style="@style/CTBlackTextHeading"
+                    android:text="wifi_2222"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/device_connection_count_rl"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/buttons_container"
+            android:layout_margin="@dimen/ct_sz_5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_total_conn_count"
+                style="@style/CTBlackTextHeading"
+                android:visibility="visible"
+                android:text="@string/total_connected_devices" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ct_sz_45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginBottom="@dimen/ct_sz_20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/setting_btn_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <com.verizon.contenttransfer.fonts.CTButtonTextView
+                    android:id="@+id/ct_manual_btn"
+                    style="@style/CTMFButtonTypeLine"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginRight="@dimen/ct_sz_10dp"
+                    android:text="@string/button_manual_text"
+                    android:visibility="visible" />
+
+                <com.verizon.contenttransfer.fonts.CTButtonTextView
+                    android:id="@+id/ct_same_wifi_network_btn_wifi_settings"
+                    android:text="@string/button_wifi_settings_text"
+                    style="@style/CTMFButtonTypeLine"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginLeft="@dimen/ct_sz_10dp"
+                    android:visibility="gone" />
+
+                <com.verizon.contenttransfer.fonts.CTButtonTextView
+                    android:id="@+id/ct_try_another_way_btn"
+                    style="@style/CTMFButtonTypeSolid"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/button_try_another_way_text"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/next_btn_group"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <com.verizon.contenttransfer.fonts.CTButtonTextView
+                    android:id="@+id/ct_one_to_many_next_btn"
+                    style="@style/CTMFButtonTypeSolid"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:text="Next" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

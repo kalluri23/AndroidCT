@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    android:background="@drawable/vz_border_bottom"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ct_old_phone_chk_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ct_w_direct_desc_tv"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ct_w_phn_name_chk"
+            android:layout_width="@dimen/ct_sz_30dp"
+            android:layout_height="@dimen/ct_sz_30dp"
+            android:src="@mipmap/icon_ct_check_grey"
+            android:tag="@string/unCheck" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/ct_w_phn_name_chk"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/ct_w_phn_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/ct_mf_charcoal_color"
+                android:textSize="@dimen/ct_txt_sz_13sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

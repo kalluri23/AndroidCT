@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ct_mf_white_color">
+
+    <include
+        android:id="@+id/ct_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/ct_br_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/ct_enter_pin_inner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ct_header_bar">
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_enter_pin_header_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/ct_enter_pin_header"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_enter_pin_message_tv"
+            style="@style/CTTextDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:textSize="@dimen/ct_txt_sz_13sp"
+            android:text="@string/ct_enter_pin_message"
+            android:layout_below="@+id/ct_enter_pin_header_tv"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_below="@+id/ct_enter_pin_message_tv"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_enter_pin_message_desc_tv"
+            android:layout_width="@dimen/ct_sz_300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:gravity="center_vertical|left"
+            android:text="@string/ct_pairing_code_message"
+            android:textColor="@color/ct_mf_charcoal_color"
+            android:layout_below="@+id/view2"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_below="@+id/ct_enter_pin_message_desc_tv">
+
+            <com.verizon.contenttransfer.utils.VerificationContainer
+                android:id="@+id/pin_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.verizon.contenttransfer.utils.VerificationCodeEditText
+                    android:id="@+id/et1"
+                    style="@style/CustomBox"
+                    android:gravity="center"
+                    android:contentDescription="pinoneeditfield"
+                    android:inputType="number"
+                    passwordtrans="true" />
+
+                <com.verizon.contenttransfer.utils.VerificationCodeEditText
+                    android:id="@+id/et2"
+                    style="@style/CustomBox"
+                    android:contentDescription="pintwoeditfield"
+                    android:inputType="number"
+                    android:gravity="center"
+                    passwordtrans="true" />
+
+                <com.verizon.contenttransfer.utils.VerificationCodeEditText
+                    android:id="@+id/et3"
+                    style="@style/CustomBox"
+                    android:gravity="center"
+                    android:contentDescription="pinthreeditfield"
+                    android:inputType="number"
+                    passwordtrans="true" />
+
+                <com.verizon.contenttransfer.utils.VerificationCodeEditText
+                    android:id="@+id/et4"
+                    style="@style/CustomBox"
+                    android:gravity="center"
+                    android:contentDescription="pinfourditfield"
+                    android:inputType="number"
+                    passwordtrans="true" />
+
+            </com.verizon.contenttransfer.utils.VerificationContainer>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ct_enter_pin_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ct_sz_0dp"
+            android:background="@color/ct_mf_light_grey_color"
+            android:layout_below="@+id/ct_enter_pin_message_tv"
+            android:layout_marginTop="@dimen/ct_sz_75dp" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ct_wifi_connected_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ct_enter_pin_inner_rl"
+        android:layout_above="@+id/ct_enter_pin_buttons_ll"
+        android:layout_marginTop="@dimen/ct_sz_60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_enter_pin_wifi_connected"
+            style="@style/CTTextDescription"
+            android:gravity="center_horizontal"
+            android:text="@string/wifi_connected_to"/>
+
+        <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+            android:id="@+id/ct_enter_pin_network"
+            style="@style/CTTextDescription"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/ct_hotspot_find_conn_status"
+            android:textIsSelectable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ct_enter_pin_buttons_ll"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="@dimen/ct_sz_20dp"
+                  android:orientation="horizontal"
+                  android:gravity="center_horizontal" >
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_enter_pin_cancel_button_tv"
+            style="@style/CTMFButtonTypeLine"
+            android:text="@string/cancel_button"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal" />
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_enter_pin_next_button_tv"
+            style="@style/CTMFButtonTypeSolid"
+            android:text="@string/next_button"
+            android:layout_gravity="bottom"
+            android:gravity="center|center_horizontal"
+            android:layout_marginLeft="@dimen/ct_sz_10dp"
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:textSize="@dimen/ct_txt_sz_13sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

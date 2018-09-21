@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mvm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/border_black_solid_white"
+    android:orientation="vertical" >
+<!-- 	android:background="@drawable/br_dialog_background" -->
+    
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- mvm:typefaceName="@string/font_verizon_apex_medium_otf"  -->
+        <TextView
+
+            android:id="@+id/titleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/vz_charcoal_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/br_alert_icon"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:id="@+id/headerTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/vz_charcoal_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+
+                    android:id="@+id/messageTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="6dp"
+                    android:textColor="@color/vz_charcoal_color"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:id="@+id/messageTextViewNotice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="left"
+                    android:textColor="@color/vz_charcoal_color"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ct_sz_15dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <TextView
+
+                android:id="@+id/messageTextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="3dp"
+                android:gravity="left"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/vz_charcoal_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:id="@+id/messageTextViewNote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="1dp"
+                android:gravity="left"
+                android:textColor="@color/vz_charcoal_color"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:minHeight="40dp"
+                android:background="@drawable/border_black_solid_white"
+                android:textColor="@color/vz_black_color"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+<!--             android:textColor="@drawable/br_dialog_button_color_selector" -->
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:minHeight="40dp"
+                android:background="@drawable/border_black_solid_white"
+                android:textColor="@color/vz_black_color"
+                android:textSize="16sp" />
+
+<!--             android:textColor="@drawable/br_dialog_button_color_selector" -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

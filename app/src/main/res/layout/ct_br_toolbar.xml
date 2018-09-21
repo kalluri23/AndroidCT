@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ct_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ct_sz_60dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/ct_mf_white_color"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/ct_toolbarLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/ct_toolbarRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/ct_toolbar_backIV"
+                android:layout_width="@dimen/ct_sz_20dp"
+                android:layout_height="@dimen/ct_sz_20dp"
+                android:gravity="center"
+                android:src="@mipmap/left_caret"
+                android:layout_marginRight="@dimen/ct_sz_10dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/ct_toolbar_hamburger_menuIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ct_toolbar_backIV"
+                android:gravity="center"
+                android:paddingRight="@dimen/ct_sz_16dp"
+                android:src="@mipmap/menu"
+                android:layout_centerVertical="true"/>
+
+            <!-- mvm:typefaceName="@string/font_verizon_apex_medium_otf" -->
+            <TextView
+                android:id="@+id/ct_toolbar_app_headerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/ct_toolbar_app_headerTV"
+                android:textColor="@color/ct_mf_black_color"
+                android:textSize="@dimen/ct_mf_black_header_font"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="@dimen/ct_sz_16dp"
+                android:layout_toLeftOf="@id/ct_toolbar_app_headerTV"
+                android:src="@mipmap/support_drawer"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ct_sz_1dp"
+                android:layout_marginTop="@dimen/ct_sz_30dp"
+                android:layout_below="@+id/search_icon"
+                android:background="@color/vz_toolbar_seperator"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

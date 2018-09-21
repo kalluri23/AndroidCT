@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		layout="@layout/ct_br_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_60dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" />
+
+	<RelativeLayout
+		android:id="@+id/ct_landing_inner_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/ct_header_bar">
+
+	<!--	<ImageView
+			android:id="@+id/ct_info_iv"
+			android:layout_width="@dimen/ct_sz_30dp"
+			android:layout_height="@dimen/ct_sz_30dp"
+			android:gravity="center_horizontal"
+			android:padding="@dimen/ct_sz_2dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:visibility="invisible"
+			android:src="@mipmap/icon_infor"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="@dimen/ct_sz_10dp"/>-->
+
+		<include
+			android:id="@+id/image_header_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			layout="@layout/ct_header_on_image_template_layout"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true" />
+
+	<!--	<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/start_message_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/text_ctlanding"
+			android:textColor="@color/ct_mf_charcoal_color"
+			android:layout_centerVertical="true"
+			android:layout_alignLeft="@+id/terms_tv"
+			android:layout_alignStart="@+id/terms_tv" />-->
+
+		<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/terms_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_12dp"
+			android:layout_marginRight="32dp"
+			android:layout_marginBottom="@dimen/ct_sz_36dp"
+			android:gravity="center_vertical|left"
+			android:padding="@dimen/ct_sz_2dp"
+			android:text="@string/terms_message"
+			android:textColor="@color/ct_mf_charcoal_color"
+			android:layout_below="@+id/image_header_layout"
+			android:layout_centerHorizontal="true" />
+
+		<LinearLayout
+			android:id="@+id/footer_links"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="@dimen/ct_sz_5dp"
+			android:layout_marginBottom="@dimen/ct_sz_10dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/privacyTV"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/privacy_policy"
+				android:textColor="@color/hyper_link"
+				android:textSize="@dimen/ct_uri_link_font"
+				android:visibility="gone"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_marginRight="@dimen/ct_sz_5dp"
+				android:layout_centerHorizontal="true" />
+
+			<TextView
+				android:id="@+id/pipe"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="|"
+				android:textColor="@color/hyper_link"
+				android:textSize="@dimen/ct_uri_link_font"
+				android:visibility="gone"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_centerHorizontal="true"/>
+
+			<TextView
+				android:id="@+id/aboutTV"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/about"
+				android:textColor="@color/hyper_link"
+				android:textSize="@dimen/ct_uri_link_font"
+				android:visibility="visible"
+				android:gravity="center_vertical|center_horizontal"
+				android:layout_marginLeft="@dimen/ct_sz_5dp"
+				android:layout_centerHorizontal="true" />
+
+		</LinearLayout>
+
+
+		<com.verizon.contenttransfer.fonts.CTButtonTextView
+			android:id="@+id/ct_get_started_button_tv"
+			style="@style/CTMFButtonTypeSolid"
+			android:layout_above="@id/footer_links"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="@dimen/ct_sz_5dp"
+			android:gravity="center"
+			android:textStyle="bold"
+			android:orientation="horizontal"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:text="@string/start_transfer" />
+	</RelativeLayout>
+
+</RelativeLayout>

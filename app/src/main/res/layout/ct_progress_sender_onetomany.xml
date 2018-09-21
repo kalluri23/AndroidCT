@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color">
+    <include
+        android:id="@+id/ct_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/ct_br_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/ct_sender_progress_inner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ct_header_bar">
+
+    <com.verizon.contenttransfer.fonts.CTHeaderTextView
+        android:id="@+id/ct_progress_send_heading"
+        style="@style/CTTextHeading"
+        android:layout_marginTop="@dimen/ct_sz_30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/ct_sz_32dp"
+        android:layout_marginRight="@dimen/ct_sz_32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="left"
+        android:textColor="@color/ct_mf_black_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/ct_txt_sz_20sp"
+        android:text="@string/ct_your_transfer_in_progress"/>
+
+    <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+        android:id="@+id/ct_progress_send_info"
+        android:text="@string/ct_open_for_smooth_transfer"
+        style="@style/CTTextDescription"
+        android:layout_marginLeft="@dimen/ct_sz_32dp"
+        android:layout_marginRight="@dimen/ct_sz_32dp"
+        android:layout_marginTop="@dimen/ct_sz_10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="left"
+        android:textSize="@dimen/ct_txt_sz_13sp"
+        android:layout_below="@+id/ct_progress_send_heading"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_below="@+id/ct_progress_send_info"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_tr_summ_desc"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ct_sz_12dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/view2"
+            android:text="Total transfer" />
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/summary"
+            style="@style/CTTextDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ct_tr_summ_desc"
+            android:text="5 Files with size of 9.3 MB" />
+
+        <ListView
+            android:id="@+id/ct_connected_one_to_many_devices_progress_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ct_sz_10dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:fadeScrollbars="false"
+            android:listSelector="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_below="@+id/summary" />
+
+        </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ct_old_phone_chk_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ct_sz_20dp"
+        android:layout_marginBottom="@dimen/ct_sz_20dp">
+        <ImageView
+            android:id="@+id/ct_content_chk"
+            android:layout_width="@dimen/ct_sz_18dp"
+            android:layout_height="@dimen/ct_sz_18dp"
+            android:src="@mipmap/ct_unchecked"
+            android:layout_centerVertical="true"
+            android:tag="@string/unCheck" />
+
+        <RelativeLayout
+            android:id="@+id/detailsview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ct_content_chk"
+            android:gravity="left">
+
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_content_tv"
+                style="@style/CTTextDescription"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="@string/ct_content_tv"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:textStyle="bold" />
+
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_total_gb_tv"
+                style="@style/CTTextDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ct_content_tv"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="left"
+                android:text="@string/ct_total_gb_tv" />
+            <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                android:id="@+id/ct_cloud_content_tv"
+                style="@style/CTTextDescription"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/ct_sz_150dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

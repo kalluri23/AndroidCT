@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color">
+    <include
+        android:id="@+id/ct_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/ct_br_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/ct_sender_progress_inner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ct_header_bar">
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_progress_send_heading"
+            style="@style/CTTextHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp"
+            android:text="@string/ct_saving_in_progress"/>
+
+        <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+            android:id="@+id/ct_progress_send_info"
+            android:text="@string/ct_open_for_saving"
+            style="@style/CTTextDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:textSize="@dimen/ct_txt_sz_13sp"
+            android:gravity="left"
+            android:textColor="@color/ct_mf_charcoal_color"
+            android:layout_below="@+id/ct_progress_send_heading"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_below="@+id/ct_progress_send_info"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+        <ListView
+            android:id="@+id/ct_saving_media_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ct_sz_10dp"
+            android:layout_marginTop="@dimen/ct_sz_10dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:fadeScrollbars="false"
+            android:listSelector="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_below="@+id/view2" />
+
+    </RelativeLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/ct_goto_background_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ct_sz_45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/ct_mf_light_grey_color"
+            android:layout_above="@+id/ct_run_in_background_done_tv" />
+
+        <TextView
+            android:id="@+id/ct_run_in_background_done_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|center_horizontal"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:visibility="visible"
+            android:text="Click here to save your content in the background" />
+
+    </LinearLayout>-->
+</RelativeLayout>

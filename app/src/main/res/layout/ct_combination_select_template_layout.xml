@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ct_mf_white_color">
+
+    <RelativeLayout
+        android:id="@+id/ct_landing_inner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ct_header_bar">
+
+        <com.verizon.contenttransfer.fonts.CTHeaderTextView
+            android:id="@+id/ct_header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:layout_marginTop="@dimen/ct_sz_30dp"
+            android:gravity="center_vertical|left"
+            android:text="Header message here."
+            android:textColor="@color/ct_mf_black_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_25sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_30dp"
+            android:layout_marginTop="@dimen/ct_sz_20dp"
+            android:layout_below="@+id/ct_header_tv"
+            android:background="@android:color/black"
+            android:layout_height="4dp"
+            android:id="@+id/view2" />
+
+
+        <RelativeLayout
+            android:id="@+id/ct_option_one_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_header_tv"
+            android:layout_marginTop="@dimen/ct_sz_65dp"
+            android:background="@color/ct_mf_white_color">
+
+
+            <ImageView
+                android:id="@+id/ct_option_one_iv"
+                android:layout_width="@dimen/ct_sz_30dp"
+                android:layout_height="@dimen/ct_sz_30dp"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_24dp"
+                android:src="@mipmap/ic_ct_gray_circle"
+                android:tag="@string/unCheck"/>
+
+            <LinearLayout
+                android:id="@+id/ct_option_one_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ct_option_one_iv"
+                android:orientation="vertical">
+
+                <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+                    android:id="@+id/ct_option_one_tv"
+                    style="@style/CTBlackTextHeading"
+                    android:gravity="left"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:text="Option one here"/>
+
+                <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                    android:id="@+id/ct_option_one_desc"
+                    style="@style/CTTextDescription"
+                    android:gravity="left"
+                    android:visibility="visible"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:text="Description here" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/ct_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ct_option_one_rl"
+            android:layout_marginTop="@dimen/ct_sz_25dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:background="@color/ct_mf_light_grey_color"/>
+
+        <RelativeLayout
+            android:id="@+id/ct_option_two_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_divider1"
+            android:layout_marginTop="@dimen/ct_sz_25dp"
+            android:background="@color/ct_mf_white_color">
+
+            <ImageView
+                android:id="@+id/ct_option_two_iv"
+                android:layout_width="@dimen/ct_sz_30dp"
+                android:layout_height="@dimen/ct_sz_30dp"
+                android:layout_marginLeft="@dimen/ct_sz_32dp"
+                android:layout_marginRight="@dimen/ct_sz_24dp"
+                android:src="@mipmap/ic_ct_gray_circle"
+                android:tag="@string/unCheck"/>
+
+            <LinearLayout
+                android:id="@+id/ct_option_two_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ct_option_two_iv"
+                android:orientation="vertical">
+
+                <com.verizon.contenttransfer.fonts.CTSubHeaderTextView
+                    android:id="@+id/ct_option_two_tv"
+                    style="@style/CTBlackTextHeading"
+                    android:gravity="left"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:text="Option two here"/>
+
+                <com.verizon.contenttransfer.fonts.CTDescriptionTextView
+                    android:id="@+id/ct_option_two_desc"
+                    style="@style/CTTextDescription"
+                    android:gravity="left"
+                    android:visibility="visible"
+                    android:textSize="@dimen/ct_txt_sz_13sp"
+                    android:text="Description here" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ct_option_two_rl"
+            android:layout_marginTop="@dimen/ct_sz_25dp"
+            android:layout_marginLeft="@dimen/ct_sz_32dp"
+            android:layout_marginRight="@dimen/ct_sz_32dp"
+            android:background="@color/ct_mf_light_grey_color"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ct_device_select_next_buttons_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ct_sz_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/back_button"
+            style="@style/CTMFButtonTypeLine"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_13sp"
+            android:gravity="center|center_horizontal"
+            android:text="@string/back"/>
+
+        <com.verizon.contenttransfer.fonts.CTButtonTextView
+            android:id="@+id/ct_device_select_next_button_tv"
+            style="@style/CTMFButtonTypeSolidGrey"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/ct_sz_10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/ct_txt_sz_13sp"
+            android:gravity="center|center_horizontal"
+            android:text="@string/next_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

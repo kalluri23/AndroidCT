@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mvm="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mvm_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vz_white_color"
+    android:elevation="2dp"
+    android:gravity="center_vertical"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cttoolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/layout_toolbar_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ct_sz_16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ctlayout_toolbar_ivBack"
+                    android:layout_width="@dimen/ct_sz_7dp"
+                    android:layout_height="@dimen/ct_sz_14dp"
+                    android:layout_gravity="center"
+                    android:paddingRight="@dimen/ct_sz_15dp"
+                    android:src="@mipmap/ct_back"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/layout_toolbar_ivPanelIcon"
+                    android:layout_width="@dimen/ct_sz_18dp"
+                    android:layout_height="@dimen/ct_sz_14dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/mvm_menu" />
+
+            </LinearLayout>
+
+
+            <!-- <LinearLayout
+                 android:id="@+id/layout_toolbar_ll_panelIconContainer"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/layout_toolbar_ll_backBtnContainer"
+                 android:visibility="visible"
+                 android:layout_marginRight="10dp">
+
+                 <ImageView
+                     android:id="@+id/layout_toolbar_ivPanelIcon"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:padding="1dp"
+                     android:src="@drawable/menu_red" />
+             </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/VerizonLogoIconIV"
+                android:layout_width="@dimen/ct_sz_130dp"
+                android:layout_height="@dimen/ct_sz_20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@mipmap/verizon_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+            <!-- mvm:typefaceName="@string/font_verizon_apex_medium_otf" -->
+            <TextView
+                android:id="@+id/layout_toolbar_tvAppHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/VerizonLogoIconIV"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Content Transfer"
+                android:textColor="@color/vz_charcoal_color"
+
+                android:textSize="@dimen/ct_sz_16dp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/layout_toolbar_tvAppHeader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/layout_toolbar_btn_container"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="My Verizon"
+                android:textSize="18dp"
+                android:visibility="gone"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/layout_toolbar_rl_notificationIconContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/layout_toolbar_ivNotificationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@drawable/notification_red" />
+
+                <TextView
+                    android:id="@+id/layout_toolbar_notificationCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/vz_white_color"
+                    android:textSize="8dp"
+                     />
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/fragment_padding_right"
+                android:layout_toLeftOf="@id/layout_toolbar_rl_notificationIconContainer">-->
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/layout_toolbar_rl_notificationIconContainer"
+                android:padding="10dp"
+                android:src="@drawable/search_red"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/close_red"
+                android:visibility="gone" />
+            <!-- </RelativeLayout>-->
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

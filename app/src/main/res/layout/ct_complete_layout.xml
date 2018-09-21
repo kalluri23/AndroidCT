@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/ct_mf_white_color">
+
+	<include
+		android:id="@+id/ct_header_bar"
+		layout="@layout/ct_br_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ct_sz_60dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ct_header_bar"
+		android:layout_above="@+id/ct_complete_layout_btn_grp">
+
+		<com.verizon.contenttransfer.fonts.CTHeaderTextView
+			android:id="@+id/ct_complete_headingTV"
+			style="@style/CTTextHeading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/ct_mf_black_color"
+			android:textStyle="bold"
+			android:gravity="left"
+			android:textSize="@dimen/ct_sz_40dp"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_28dp"
+			android:layout_marginBottom="@dimen/ct_sz_28dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_centerHorizontal="true"
+			android:text="@string/heading_ct_complete" />
+
+
+		<ImageView
+			android:id="@+id/ct_mobile_iconIV"
+			android:layout_width="@dimen/ct_sz_275dp"
+			android:layout_height="@dimen/ct_sz_275dp"
+			android:layout_below="@+id/ct_complete_headingTV"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/ct_sz_33dp"
+			android:src="@mipmap/icon_ct_transfer_complete_sender"
+			android:visibility="gone"/>
+
+		<com.verizon.contenttransfer.fonts.CTDescriptionTextView
+			android:id="@+id/ct_complete_textTV"
+			style="@style/CTTextDescription"
+			android:layout_below="@+id/ct_complete_headingTV"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:gravity="left"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_marginTop="@dimen/ct_sz_12dp"
+			android:layout_marginBottom="@dimen/ct_sz_12dp"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:text="@string/text_ct_complete"
+			android:textColor="@color/ct_mf_charcoal_color"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/ct_sz_32dp"
+			android:layout_marginRight="@dimen/ct_sz_32dp"
+			android:layout_below="@+id/ct_complete_textTV"
+			android:layout_marginTop="@dimen/ct_sz_20dp"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:id="@+id/ct_survey_layout_new">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/vz_cloud_protects"
+				android:id="@+id/cloud_header"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/vz_cloud_tv"
+				android:textColor="@color/vz_charcoal_color"
+				android:textSize="@dimen/ct_txt_sz_13sp"
+				android:layout_marginTop="@dimen/ct_sz_5dp"
+				android:text="@string/vz_cloud_banner_text"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/ct_txt_sz_13sp"
+				android:id="@+id/learn_more_tv"
+				android:layout_marginTop="@dimen/ct_sz_5dp"
+				android:textColor="@color/hyper_link"
+				android:text="@string/learn_more"/>
+
+		</LinearLayout>
+
+		
+
+		<!-- This is survey banner  -->
+		<LinearLayout
+			android:id="@+id/ct_survey_layout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/ct_complete_textTV"
+			android:orientation="horizontal"
+			android:visibility="gone">
+
+			<ImageView
+				android:id="@+id/ct_survey_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/ct_complete_textTV"
+				android:layout_marginTop="@dimen/ct_sz_5dp"
+				android:background="@color/ct_mf_white_color"
+				android:orientation="horizontal"
+				android:src="@mipmap/picture2"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/ct_complete_layout_btn_grp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/ct_sz_20dp"
+		android:layout_marginTop="@dimen/ct_sz_20dp"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<com.verizon.contenttransfer.fonts.CTButtonTextView
+			android:id="@+id/ct_recap"
+			style="@style/CTMFButtonTypeLine"
+			android:layout_gravity="bottom"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:gravity="center|center_horizontal"
+			android:text="@string/button_recap_text"/>
+
+
+		<com.verizon.contenttransfer.fonts.CTButtonTextView
+			android:id="@+id/ct_done"
+			style="@style/CTMFButtonTypeSolid"
+			android:layout_gravity="bottom"
+			android:textSize="@dimen/ct_txt_sz_13sp"
+			android:layout_marginLeft="@dimen/ct_sz_10dp"
+			android:gravity="center|center_horizontal"
+			android:text="@string/button_done_text"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,252 @@
+//apply plugin: 'android'
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+    // Autoincrement the version properties file
+    // ******************************************
+    def versionPropsFile = file('src/main/assets/version.properties')
+    def code = 0
+    def temp = 0
+    def androidVersionCode = 0;
+
+    def majorversion = 1
+    def minorversion = 1
+
+    def Properties versionProps = new Properties()
+
+    defaultConfig {
+        applicationId "com.verizon.contenttransfer"
+        minSdkVersion 15
+        targetSdkVersion 26
+
+        if (versionPropsFile.canRead()) {
+            versionProps.load(new FileInputStream(versionPropsFile))
+            majorversion = versionProps['VERSION_MAJOR'].toInteger()
+            minorversion = versionProps['VERSION_MINOR'].toInteger()
+            /*if ( buildType.name.equals("release") ) {
+                code = versionProps['REL_VERSION_CODE'].toInteger() + 1
+                versionProps['REL_VERSION_CODE'] = code.toString()
+            } else {
+                code = versionProps['DBG_VERSION_CODE'].toInteger() + 1
+                versionProps['DBG_VERSION_CODE'] = code.toString()
+            }*/
+
+            androidVersionCode = versionProps['REL_VERSION_CODE'].toInteger()+1
+            code = versionProps['VERSION_CODE'].toInteger()+1
+            versionCode code
+            versionProps['VERSION_CODE'] = code.toString()
+            versionProps['DATE']=getDate().toString()
+            versionProps['TIMESTAMP']=getTimeStamp().toString()
+
+            versionProps.store(versionPropsFile.newWriter(), null)
+
+            versionName "${majorversion}.${minorversion}.${code}"
+        } else {
+            throw new GradleException("Could not read version.properties!")
+        }
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debugConfig {
+            storeFile file('signingkeys/debug.keystore')
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        releaseConfig {
+            keyAlias 'rckey'
+            keyPassword 'richclient'
+            storeFile file('signingkeys/richclient.keystore')
+            storePassword 'richclient'
+        }
+        unsigned{
+            keyAlias ''
+            keyPassword ''
+            storePassword ''
+        }
+
+
+    }
+    buildTypes {
+        debug {
+            //applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+
+            debuggable true
+            //multiDexEnabled true
+            //This should be true for Standalone builds
+            buildConfigField "boolean", "STANDALONE_BUILD", "true"
+            buildConfigField "boolean", "FILE_DEBUG", "true"
+            buildConfigField "boolean", "DEBUG_LOG", "true"
+            buildConfigField "boolean", "ENABLE_ANALYTICS", "true"
+            buildConfigField "boolean", "ENABLE_CRASHLOG", "true"
+            buildConfigField "boolean", "LOCAL_DB_PROD", "false"
+
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            manifestPlaceholders = [app_name: "Content Transfer debug"]
+        }
+
+        qaRelease {
+            //applicationIdSuffix '.release'
+            versionNameSuffix '-QA_RELEASE'
+
+            debuggable false
+            minifyEnabled true              //enabling proguard
+            //This should be true for Standalone builds
+            buildConfigField "boolean", "STANDALONE_BUILD", "true"
+            buildConfigField "boolean", "FILE_DEBUG", "false"
+            buildConfigField "boolean", "DEBUG_LOG", "false"
+            buildConfigField "boolean", "ENABLE_ANALYTICS", "true"
+            buildConfigField "boolean", "ENABLE_CRASHLOG", "true"
+            buildConfigField "boolean", "LOCAL_DB_PROD", "false"
+            //shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            manifestPlaceholders = [app_name: "Content Transfer"]
+        }
+
+        release {
+            //applicationIdSuffix '.release'
+            versionNameSuffix '-RELEASE'
+
+            debuggable false
+            minifyEnabled true              //enabling proguard
+            //This should be true for Standalone builds
+            buildConfigField "boolean", "STANDALONE_BUILD", "true"
+            buildConfigField "boolean", "FILE_DEBUG", "false"
+            buildConfigField "boolean", "DEBUG_LOG", "false"
+            buildConfigField "boolean", "ENABLE_ANALYTICS", "true"
+            buildConfigField "boolean", "ENABLE_CRASHLOG", "true"
+            buildConfigField "boolean", "LOCAL_DB_PROD", "true"
+            //shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            manifestPlaceholders = [app_name: "Content Transfer"]
+        }
+/*
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                project.ext { appName = 'contenttransfer' }
+                def formattedDate = new Date().format('yyyyMMddHHmmss')
+                def newName = output.outputFile.name
+
+*/
+
+                /*  def flavor = "default";
+                  if (variant.productFlavors.size() > 0) {
+                      flavor = variant.productFlavors.get(0);
+                  }
+
+                  def initials = "DefaultFlavor";
+                  if (flavor.name.equals( "prodRelease" ) ) {
+                      initials = "rel";
+                  } else if (flavor.name.equals("prodDebug") ) {
+                      initials = "dbg";
+                  }*/
+/*
+                def build = "dbg";      //Debug
+                if (variant.buildType.name.equals("release") ) {
+                    build = "rel";      //Release
+                } else if (variant.buildType.name.equals("storeBuild")) {
+                    build = "rel";
+                } else {
+                    //build = "unk";
+                }
+                //def finalName = appName + "-" + build + "-" + variant.versionName + "-" + formattedDate + ".apk";
+                def finalName = appName + "-" + variant.versionName + "-" + androidVersionCode + "-" + formattedDate + ".apk";
+                output.outputFile = new File(output.outputFile.parent, finalName)
+            }
+        }*/
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    //exclude these files from build
+    aaptOptions {
+        //ignoreAssetsPattern 'version.properties'
+        //ignoreAssetsPattern "!*.otf"
+        //ignoreAssetsPattern "!*.txt:!*.properties:!*.otf"
+    }
+
+    sourceSets {
+        main {
+            //java.srcDirs = ['src/main/java', 'src/androidTest/java']
+            java.srcDirs = ['src/main/java']
+            //assets.srcDirs = ['src/main/assets', 'src/main/assets/fonts']
+            assets.srcDirs = ['src/main/assets']
+        }
+        //instrumentTest.setRoot('src/test')
+    }
+
+    productFlavors {
+
+        /*prodDebug {
+            code = versionProps['DBG_VERSION_CODE'].toInteger() + 1
+            versionProps['DBG_VERSION_CODE'] = code.toString()
+            versionCode code
+            versionName "${majorversion}.${minorversion}.${code}"
+
+        }
+
+        prodRelease {
+            code = versionProps['REL_VERSION_CODE'].toInteger() + 1
+            versionProps['REL_VERSION_CODE'] = code.toString()
+            versionCode code
+            versionName "${majorversion}.${minorversion}.${code}"
+        }
+
+        versionProps.store(versionPropsFile.newWriter(), null)*/
+    }
+
+    repositories {
+        jcenter()
+        flatDir {
+            //dirs "../lib_mvm_common", "../lib_mvm_common/libs"
+            dirs "ctlibs"
+        }
+    }
+
+    dexOptions {
+        incremental true
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+def getDate(){
+    def date = new Date()
+    def formattedDate = date.format('MM/dd/yyyy')
+    return formattedDate
+}
+
+def getTimeStamp() {
+    def formattedTime = new Date().format('HHmmss')
+    return formattedTime;
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile project(':lib_mvm_common')
+    compile 'com.android.support:multidex:1.0.1'
+    compile(name: 'adobeMobileLibrary-4.8.3', ext: 'jar')
+    //compile 'com.google.zxing:core:3.3.0'
+    //compile(name: 'vzwanalytics-content', ext: 'aar')
+    //compile project(':vzwanalytics')
+    compile(name: 'zxing-barcode', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:26.0.0'   // Version 23+ is required
+}
